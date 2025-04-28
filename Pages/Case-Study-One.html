@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Study One</title>
+  <!-- Tailwind CSS link -->
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen bg-blue-100 font-sans text-black p-8 flex flex-col gap-8">
+
+  <!-- Top Navigation -->
+  <div class="flex justify-between items-center -mt-10 relative">
+    <button class="bg-gray-200 border border-gray-400 text-black w-64 h-20 py-2 rounded-b-md shadow-sm">
+      Back
+    </button>
+    <button class="bg-gray-200 border border-gray-400 text-black  w-64 h-20 py-2 rounded-b-md shadow-sm">
+      Slideshow
+    </button>
+  </div>
+
+  <!-- Project Title and Thumbnail -->
+  <div class="flex items-center bg-white border-4 border-gray-300 rounded-lg shadow-md p-4 w-[500px] mx-auto">
+    <!-- Thumbnail Image -->
+    <img src="/Media/Photos/CaseStudyOne/JournalIcon.png" alt="Project Thumbnail" class="w-24 h-24 object-cover rounded-md mr-4">
+  
+    <!-- Text Content -->
+    <div class="flex flex-col justify-center">
+      <h2 class="text-2xl font-bold text-gray-800">Nature Conservation Journal App</h2>
+      <p class="text-sm text-gray-500 mt-1">Submitted March 2025</p>
+    </div>
+  </div>
+
+ <!-- Main Slideshow Image -->
+<div class="relative flex justify-center items-center mt-6">
+    <!-- Left Button -->
+    <button class="absolute left-2 bg-gradient-to-b from-cream-100 to-cream-300 text-black border-[3px] border-gray-400 rounded-xl w-[60px] h-[120px] flex items-center justify-center shadow-md font-bold">
+      &lt;
+    </button>
+  
+    <!-- Slideshow Image -->
+    <img id="focusedImage" src="/Media/Photos/CaseStudyOne/PhaseOne/GRCHomePage.png" alt="Slideshow Image" class="w-[500px] h-[300px] object-cover rounded-lg border-2 border-gray-400">
+  
+    <!-- Right Button -->
+    <button class="absolute right-2 bg-gradient-to-b from-cream-100 to-cream-300 text-black border-[3px] border-gray-400 rounded-xl w-[60px] h-[120px] flex items-center justify-center shadow-md font-bold">
+      &gt;
+    </button>
+  </div>
+
+  <!-- Phase Bar and Thumbnail Strip -->
+  <div class="flex items-center justify-center gap-4 mt-6">
+    <!-- Phase -->
+  <div class="text-center w-[120px] h-[120px] border rounded-md bg-white flex items-center justify-center">
+    <p id="ImagePhaseBoxLabel" class="text-sm font-bold leading-tight">Phase:<br>ONE</p>
+  </div>
+
+    <!-- Thumbnails -->
+    <div id="thumbnailContainer" class="flex gap-2"></div>
+
+<!-- Total -->
+<div class="text-center w-[120px] h-[120px] border rounded-md bg-white flex items-center justify-center">
+    <p id="ImageCountLabel" class="text-sm font-bold leading-tight">Total:<br>6 Images</p>
+  </div>
+  </div>
+
+  <!-- Project Phase Description -->
+  <div class="bg-white p-6 rounded-lg shadow mt-6">
+    <h2 id="textBoxHeader" class="text-xl font-bold mb-2">Project Phase</h2>
+    <p id="textBoxDescription" class="text-gray-700">
+      Here would be the description of the current project phase. You could add paragraphs describing each milestone or goal.
+    </p>
+  </div>
+
+  <!-- Timeline Navigation -->
+  <div class="relative mt-10 flex items-center justify-center">
+    <button id="previousPhase" class="absolute w-[60px] h-[80px] left-2 bg-white rounded-xl p-2 shadow">&lt;</button>
+
+    <!-- Progress Bar -->
+    <div class="w-3/4 bg-gray-300 h-3 rounded-full overflow-hidden">
+      <div class="bg-blue-500 h-full w-1/4"></div> <!-- This is the filled part -->
+    </div>
+
+    <button id="nextPhase" class="absolute w-[60px] h-[80px] right-2 bg-white rounded-xl p-2 shadow">&gt;</button>
+  </div>
+  <script>
+    const ImagePhaseBoxLabel = document.getElementById('ImagePhaseBoxLabel');
+    const ImageCountLabel = document.getElementById('ImageCountLabel');
+    const PreviousPhase = document.getElementById('previousPhase');
+    const nextPhase = document.getElementById('nextPhase');
+    const textBoxHeader = document.getElementById('textBoxHeader');
+    const textBoxDescription = document.getElementById('textBoxDescription');
+    const focusedImage = document.getElementById('focusedImage');
+
+
+   
+  
+    const phases = [
+        {
+    phase: 'ONE',
+    total: '6 Images',
+    header: 'Initial Research',
+    description: 'This phase focused on early research and inspiration gathering.',
+    images: [
+      '/Media/Photos/CaseStudyOne/PhaseOne/GRCHomePage.png',
+      '/Media/Photos/CaseStudyOne/PhaseOne/GRCRestorationStuff.png'
+    ]
+  },
+  { phase: 'TWO', total: '4 Images', header: 'Design Iterations', description: 'This phase involved multiple design drafts and refinement.' },
+  { phase: 'THREE', total: '5 Images', header: 'Final Prototype', description: 'This phase polished the project into a complete prototype.' },
+  { phase: 'FOUR', total: '3 Images', header: 'Launch & Feedback', description: 'This phase wrapped up with launch activities and user feedback.' }
+];
+
+  
+    let currentPhase = 0;
+  
+    function updatePhase() {
+  ImagePhaseBoxLabel.innerHTML = `Phase:<br>${phases[currentPhase].phase}`;
+  ImageCountLabel.innerHTML = `Total:<br>${phases[currentPhase].total}`;
+  textBoxHeader.textContent = phases[currentPhase].header;
+  textBoxDescription.textContent = phases[currentPhase].description;
+
+  // Clear previous thumbnails
+  const thumbnailContainer = document.getElementById('thumbnailContainer');
+  thumbnailContainer.innerHTML = '';
+
+  // Add new thumbnails
+  phases[currentPhase].images.forEach((imgSrc) => {
+    const img = document.createElement('img');
+    img.src = imgSrc;
+    img.alt = 'thumb';
+    img.className = 'w-20 h-20 object-cover border rounded shadow-md cursor-pointer transition hover:scale-105'; 
+    // Added some hover effect ✨
+    
+    // Add click event: clicking thumbnail updates the big image
+    img.addEventListener('click', () => {
+      focusedImage.src = imgSrc;
+    });
+
+    thumbnailContainer.appendChild(img);
+  });
+
+  // Default the big image to the first thumbnail of the phase
+  if (phases[currentPhase].images.length > 0) {
+    focusedImage.src = phases[currentPhase].images[0];
+  }
+}
+
+  
+   PreviousPhase.addEventListener('click', () => {
+      currentPhase = (currentPhase - 1 + phases.length) % phases.length;
+      updatePhase();
+    });
+  
+    nextPhase.addEventListener('click', () => {
+      currentPhase = (currentPhase + 1) % phases.length;
+      updatePhase();
+    });
+  
+    // Optional: Set initial phase correctly when page loads
+    updatePhase();
+  </script>
+</body>
+
+</html>
+
