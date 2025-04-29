@@ -12,45 +12,45 @@
 <body class="min-h-screen bg-blue-100 font-sans text-black p-8 flex flex-col gap-8">
 
   <!-- Top Navigation -->
-  <div class="flex justify-between items-center -mt-10 relative">
-    <button class="bg-gray-200 border border-gray-400 text-black w-64 h-20 py-2 rounded-b-md shadow-sm">
+  <div class="sticky top-0 z-50 flex justify-between items-center -mt-10">
+    <button class="bg-gray-200 border border-gray-400 text-black w-64 h-10 py-2 rounded-b-md shadow-sm">
       Back
     </button>
-    <button class="bg-gray-200 border border-gray-400 text-black  w-64 h-20 py-2 rounded-b-md shadow-sm">
-      Slideshow
+    <button class="bg-gray-200 border border-gray-400 text-black  w-64 h-10 py-2 rounded-b-md shadow-sm">
+     <p>Next Project</p>
     </button>
   </div>
 
   <!-- Project Title and Thumbnail -->
-  <div class="flex items-center bg-white border-4 border-gray-300 rounded-lg shadow-md p-4 w-[500px] mx-auto">
+  <div class="flex items-center bg-white border-4 border-gray-300 rounded-lg shadow-md p-4 w-[500px] h-[75px] mx-auto -mt-6">
     <!-- Thumbnail Image -->
-    <img src="/Media/Photos/CaseStudyOne/JournalIcon.png" alt="Project Thumbnail" class="w-24 h-24 object-cover rounded-md mr-4">
+    <img src="/Media/Photos/CaseStudyOne/JournalIcon.png" alt="Project Thumbnail" class="w-14 h-14 object-cover rounded-md mr-4">
   
     <!-- Text Content -->
     <div class="flex flex-col justify-center">
-      <h2 class="text-2xl font-bold text-gray-800">Nature Conservation Journal App</h2>
-      <p class="text-sm text-gray-500 mt-1">Submitted March 2025</p>
+      <h2 class="text-1xl font-bold text-gray-800">Nature Conservation Journal App</h2>
+      <p class="text-sm text-gray-500 mt-1">Role: Full-Stack Developer, UX/UI Designer</p>
     </div>
   </div>
 
  <!-- Main Slideshow Image -->
-<div class="relative flex justify-center items-center mt-6">
+<div class="relative flex justify-center items-center -mt-5">
     <!-- Left Button -->
-    <button class="absolute left-2 bg-gradient-to-b from-cream-100 to-cream-300 text-black border-[3px] border-gray-400 rounded-xl w-[60px] h-[120px] flex items-center justify-center shadow-md font-bold">
+    <button id="previousPhase" class="absolute left-2 bg-gradient-to-b from-cream-100 to-cream-300 text-black border-[3px] border-gray-400 rounded-xl w-[60px] h-[120px] flex items-center justify-center shadow-md font-bold">
       &lt;
     </button>
   
     <!-- Slideshow Image -->
-    <img id="focusedImage" src="/Media/Photos/CaseStudyOne/PhaseOne/GRCHomePage.png" alt="Slideshow Image" class="w-[500px] h-[300px] object-cover rounded-lg border-2 border-gray-400">
+    <img id="focusedImage" src="/Media/Photos/CaseStudyOne/PhaseOne/GRCHomePage.png" alt="Slideshow Image" class="w-[500px] h-[300px] object-contain bg-white rounded-lg border-2 border-gray-400 p-2">
   
     <!-- Right Button -->
-    <button class="absolute right-2 bg-gradient-to-b from-cream-100 to-cream-300 text-black border-[3px] border-gray-400 rounded-xl w-[60px] h-[120px] flex items-center justify-center shadow-md font-bold">
+    <button id="nextPhase" class="absolute right-2 bg-gradient-to-b from-cream-100 to-cream-300 text-black border-[3px] border-gray-400 rounded-xl w-[60px] h-[120px] flex items-center justify-center shadow-md font-bold">
       &gt;
     </button>
   </div>
 
   <!-- Phase Bar and Thumbnail Strip -->
-  <div class="flex items-center justify-center gap-4 mt-6">
+  <div class="flex items-center justify-center gap-4 -mt-5">
     <!-- Phase -->
   <div class="text-center w-[120px] h-[120px] border rounded-md bg-white flex items-center justify-center">
     <p id="ImagePhaseBoxLabel" class="text-sm font-bold leading-tight">Phase:<br>ONE</p>
@@ -66,7 +66,7 @@
   </div>
 
   <!-- Project Phase Description -->
-  <div class="bg-white p-6 rounded-lg shadow mt-6">
+  <div class="bg-white p-6 rounded-lg shadow -mt-5">
     <h2 id="textBoxHeader" class="text-xl font-bold mb-2">Project Phase</h2>
     <p id="textBoxDescription" class="text-gray-700">
       Here would be the description of the current project phase. You could add paragraphs describing each milestone or goal.
@@ -98,18 +98,148 @@
   
     const phases = [
         {
-    phase: 'ONE',
+    phase: 'Search',
     total: '6 Images',
-    header: 'Initial Research',
-    description: 'This phase focused on early research and inspiration gathering.',
+    header: 'Choosing and Securing a Client',
+    description: `The Green River Coalition is a nonprofit 
+    environmental organization dedicated to restoring and preserving natural 
+    habitats throughout the Green River watershed. Their team manages numerous 
+    outdoor restoration sites, oversees volunteer efforts, and compiles detailed 
+    progress reports for grant funders who are an essential aspect of sustaining financial 
+    support. For this capstone project, the design and development team selected the 
+    Coalition as a client due to their alignment with community-driven environmental 
+    work and the pressing need to improve internal reporting systems. The collaboration 
+    aimed to build a sustainable digital solution to reduce reporting burdens and improve 
+    operational clarity.`,
     images: [
       '/Media/Photos/CaseStudyOne/PhaseOne/GRCHomePage.png',
       '/Media/Photos/CaseStudyOne/PhaseOne/GRCRestorationStuff.png'
     ]
   },
-  { phase: 'TWO', total: '4 Images', header: 'Design Iterations', description: 'This phase involved multiple design drafts and refinement.' },
-  { phase: 'THREE', total: '5 Images', header: 'Final Prototype', description: 'This phase polished the project into a complete prototype.' },
-  { phase: 'FOUR', total: '3 Images', header: 'Launch & Feedback', description: 'This phase wrapped up with launch activities and user feedback.' }
+  { phase: 'Clarity', 
+    total: '4 Images', 
+    header: 'The Issue',
+    description: `Once the first two rounds of meetings happened between the team 
+    and organization members, it was concluded that the Coalition's internal processes 
+    heavily relied on trust and unstructured Excel spreadsheets to document employee 
+    activities and resource usage. Although this approach had worked informally in the past, 
+    it produced a level of inconsistency that would create unsustainable workload on the 
+    organization’s lead grant writer. Different types of records could be recorded daily, and having 
+    weeks worth of work without consistency and structure could eventually make 
+    future grant funding less likely or delayed.
+    It became clear that a scalable, user-friendly system was necessary to streamline data 
+    collection and maintain funding reliability.`,
+images: [
+      '/Media/Photos/CaseStudyOne/BoardMembers.png'
+      
+    ]},
+
+  { phase: 'Significance', 
+  total: '5 Images', 
+  header: 'Importance of Finding a Solution', 
+  description: `Grant funders and board members are still involved with progress and 
+  restoratoin site activities but the Coalition’s
+   tracking system began to reveal serious vulnerabilities that could further the knowledge gap between 
+   employees and board members. Funders required not
+    just general summaries but detailed breakdowns of work by location, task, and timing for a bigger picture.
+     Without structured data, the organization faced the threat of funding gaps that could
+      halt critical restoration projects. For the capstone team, the situation offered a real-world
+       challenge to apply user-centered design methods while making a meaningful impact. The objective
+        was to deliver a solution that would provide clarity and credibility to the Coalition’s
+         reporting—offering long-term operational resilience.` },
+    { phase: 'Ideation', 
+  total: '3 Images', 
+  header: 'Database Architecture', 
+  description: `Following the initial prototype, efforts shifted
+   toward defining a robust data structure that could scale with the Coalition’s needs.
+    The team created a centralized database schema focused on restoration sites as the 
+    primary unit of organization. Each site entry included detailed logs, event records, 
+    photo uploads, and resource counts. This architecture enabled consistency across data 
+    entries while allowing for future expansion into reporting dashboards and permission-based 
+    access levels.`,
+  images: [
+      '/Media/Photos/CaseStudyOne/PhaseOne/databaseDrafting.jpg',
+      '/Media/Photos/CaseStudyOne/PhaseOne/databaseDrafting2.png',
+      '/Media/Photos/CaseStudyOne/DatabasePhotos/AlondrasVersion.jpg',
+      '/Media/Photos/CaseStudyOne/DatabasePhotos/andrews DB.png',
+      '/Media/Photos/CaseStudyOne/DatabasePhotos/DrawnDB.jpg'
+    ] },
+  { phase: 'Spring Qtr', 
+  total: '5 Images', 
+  header: 'Solution Exploration with PowerApps', 
+  description: `The projects initial design lasted three months for a quarter project. 
+  This version of the project focused on utilizing familiar software and 
+  data storage capablities provided through Microsoft. With the use of newly made tools, progress was often halted 
+  or delayed for some time because of the steep learning curve needed to 
+  integrate different parts of the microsoft suite such as DataVerse, OneDrive, PowerApps, and security integrations
+  for users to have access to different parts of the site. However, during this time of development strong communication
+  between team and client allowed for quick feedback loops from the client
+  that also provided insights into the Coalition’s day-to-day data needs. The app included basic
+  journaling features, image upload options, and status tracking per site. While functional,
+  this version of the project did not meet the quality needed in order for end users to successfully save and 
+  create new data entry logs for their daily work progress.`,
+  images: [
+      '/Media/Photos/CaseStudyOne/PowerApps/PowerAppDevelopment.png',
+      '/Media/Photos/CaseStudyOne/PowerApps/LogEntryViewExample.png',
+      '/Media/Photos/CaseStudyOne/PowerApps/LoginPageExample.png',
+      '/Media/Photos/CaseStudyOne/DevelopmentPhotos/summativePowerApps.jpg',
+      '/Media/Photos/CaseStudyOne/DevelopmentPhotos/DataverseExample.png',
+      '/Media/Photos/CaseStudyOne/DevelopmentPhotos/ExampleCodePowerApps.png'
+    ] },
+  { phase: 'Fall Qtr', 
+  total: '3 Images', 
+  header: 'Solution Exploration with .NET App', 
+  description: `When returning to the project in another academic quarter, the team was encouraged to include a 
+  more customized and working solution for the clients. 
+   Many of the original processes and features were transferred in the best possible way, with 
+  focus on data storage, data retrieval, and representation being done with REACT and an MVC (Model View Controller) framework. 
+  Once again, there was a new learning curve for the team to go through but with the same dedication, effort, and discipline
+  that was used for the previous version of the project the team knew they could pull through. Both old and modern versions 
+  of wireframes, use cases,  and database models were discussed for hours to avoid issues later 
+  on in development.
+  Recognizing the need for a more scalable and feature-rich platform, 
+  the team rebuilt the application using a .NET framework with a React front end and MVC 
+  (Model-View-Controller) architecture. This updated version supported better data handling 
+  and offered a smoother experience for users managing multiple sites. 
+  The redesigned interface allowed for more flexible inputs, refined status 
+  tracking, and more intuitive navigation tailored to the Coalition’s workflows. `,
+  images: [
+      '/Media/Photos/CaseStudyOne/DevelopmentPhotos/NetWireFrame.jpg',
+      '/Media/Photos/CaseStudyOne/DevelopmentPhotos/NetWireFrame2.jpg',
+      '/Media/Photos/CaseStudyOne/DevelopmentPhotos/SQLauthentication.png'
+
+
+    ] },
+  { phase: 'Final Design', 
+  total: '5 Images', 
+  header: 'Solution Design', 
+  description: ` This phase involved refining the visual and 
+  interaction design of the application. Special attention was 
+  paid to accessibility, mobile responsiveness, and clean site navigation. 
+  The design featured intuitive card-based modules for each restoration site, 
+  allowing users to quickly view and update status information. Volunteer entry logs, 
+  resource summaries, and site-specific notes were also integrated to ensure the interface 
+  supported real-time updates with minimal friction. The overall look and feel aimed to reflect 
+  the Coalition’s values: community, transparency, and environmental care.`,    
+  images: [
+      '/Media/Photos/CaseStudyOne/NetApp/LandingPage.png',
+      '/Media/Photos/CaseStudyOne/NetApp/DashboardPage.png',
+      '/Media/Photos/CaseStudyOne/NetApp/NewLogEntryCreation.png',
+      '/Media/Photos/CaseStudyOne/NetApp/RecentEntries.png',
+      '/Media/Photos/CaseStudyOne/NetApp/ResourceSelectionScreen.png'
+    ] },
+  { phase: 'Testing', 
+  total: '1 Image', 
+  header: 'Solution Iteration', 
+  description: `The final phase centered on validating functionality, reliability, 
+  and user experience through iterative testing and refinement. Automated testing 
+  was implemented using Selenium to ensure the application could handle core user 
+  flows without failure. Two primary test cases were executed: editing a restoration 
+  site and creating a new log entry.`,    
+  images: [
+      '/Media/Photos/CaseStudyOne/SelLogo.png'
+      
+    ] },
 ];
 
   
