@@ -1,1 +1,146 @@
-<p>case study two</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Study Two</title>
+  <!-- Tailwind CSS link -->
+  <link href="../dist/output.css" rel="stylesheet">
+</head>
+
+<!--entire body-->
+<body class="w-[99vw] bg-white font-sans text-black relative ">
+    <!--Navbar-->
+    <div class="sticky h-16 z-50">
+        <nav class="bg-[#bdd3e4] lg:text-2xl fixed pt-0 pb-4 w-full z-50 h-16">
+          <ul class="flex justify-between max-w-6xl mx-auto p-3 w-screen" style="background-color: #bdd3e4;">
+            <li><a href="/index.html#Home" class="text-blue-600 font-semibold scroll-mt-20">Home</a></li>
+            <li><a href="/index.html#CaseStudies" class="text-blue-600 font-semibold scroll-mt-20">Case Studies</a></li>
+            <li><a href="/index.html#About" class="text-blue-600 font-semibold scroll-mt-20">About</a></li>
+            <li><a href="/index.html#Contact" class="text-blue-600 font-semibold scroll-mt-20">Contact</a></li>
+          </ul>
+        </nav>  
+        </div>
+        <section
+  class="scroll-mt-12 pt-16 relative mx-auto min-h-[87vh] w-full bg-cover bg-center bg-no-repeat flex items-center justify-center"
+  style="background-image: url('../Media/SiteAssets/CaseStudies/Background2.svg'); background-size: cover; max-width: 150rem;">
+<!--Section with sub divs that house the case study content-->
+
+    <div class="px-6 py-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+      
+          <!-- Text Content -->
+          <div class=" bg-white bg-opacity-50 rounded-xl p-8 shadow-md">
+            <h1 class="text-4xl md:text-3xl font-bold text-blue-800 mb-4">U.S. Air Force SharePoint Administration & HIPAA Compliance Initiative
+            </h1>
+            <p class="text-lg text-gray-700 font-medium">Lead Researcher | Power Automate Engineer | SharePoint Systems Administrator
+            </p>
+            <p class="mt-6 text-base text-gray-800 leading-relaxed">
+                This project focused on designing a secure digital workspace for the U.S. Air Force that upheld HIPAA compliance while improving cross-department productivity.
+            </p>
+          </div>
+      
+          <!-- Image Section -->
+          <div class="w-full">
+            <img src="/Media/Photos/CaseStudyOne/forest.jpg" alt="Nature Conservation App"
+                 class="w-full rounded-xl shadow-lg border border-gray-200" />
+          </div>
+      
+        </div>
+    </div>
+  </section>
+  <div class="bg-[#bdd3e4] h-4">
+
+  </div>
+  <section class="mx-auto w-full  bg-[#bdd3e4] drop-shadow-lg">
+   
+    <div class="grid grid-rows-[auto_auto_auto] gap-4 p-10 drop-shadow-md">
+        <h1 class="font-semibold text-2xl pt-4">Technology Used</h1>
+        <!-- Top Row: 3 columns -->
+        <div class="grid grid-cols-3 gap-4">
+          <div class=" p-4 text-center">
+            <img src="/Media/Photos/CaseStudyOne/TechPhotos/SharePoint-Symbol.png" alt="Microsoft SharePoint"/>
+            <h1>Microsoft SharePoint</h1>
+            
+          </div>
+          <div class=" p-4 text-center">
+            
+                <img src="/Media/Photos/CaseStudyOne/TechPhotos/Microsoft-Teams-Emblem.png" alt="Microsoft Teams"/>
+                <h1>Microsoft Teams</h1>
+                
+              
+          </div>
+          <div class=" p-4 text-center">
+            
+                <img src="/Media/Photos/CaseStudyOne/TechPhotos/Power-Automate-22.webp" class="pt-12"alt="Microsoft Power Automate"/>
+                <h1 class="pt-14" >Microsoft Power Automate</h1>
+              
+          </div>
+        </div>
+      
+        <!-- Middle Row: 1 full-width column -->
+        <div class=" bg-slate-400 p-4 text-center">Content ideas? Award mentions? Team that i worked with? </div>
+      
+        <!-- Bottom Row: 2 columns -->
+        <div class="grid grid-cols-2 gap-4">
+          <div class="  bg-slate-400 p-4 text-center">Deciding on content</div>
+          <div class=" bg-slate-400  p-4 text-center">I want this to be like some quick initial background 
+            that is easy for the viewer to understand 
+          </div>
+        </div>
+      </div>
+  </section>
+  <section class="bg-white text-gray-800 py-16 px-6 lg:px-32 max-w-screen-xl mx-auto">
+    <div class="mb-12">
+      <h2 class="text-3xl font-bold text-blue-800 mb-4">Why HIPAA Compliance Mattered</h2>
+      <p class="leading-relaxed mb-4">After speaking with our client, I kept thinking about what could go wrong if someone’s private medical information accidentally got sent to the wrong person. Imagine someone submitting a request for medical leave and that request with all their private details ends up being shared across 13 different Air Force units.</p>
+      <blockquote class="border-l-4 border-blue-500 pl-4 italic text-blue-900 mb-4">"This wasn’t just about file organization. It was about protecting people."</blockquote>
+      <p class="leading-relaxed">The Air Force needed a system that could encourage communication while making sure private information stayed safe. HIPAA added complexity to the design but it was essential. This part of the process gave me a deeper respect for secure systems planning.</p>
+    </div>
+  
+    <div class="mb-16">
+      <img src="/Media/Photos/CaseStudyTwo/DeptHierarchy.png" alt="US Air Force Department Hierarchy" class="rounded-xl shadow-md mx-auto mb-4 w-1/2 h-1/2">
+      <p class="text-center text-sm text-gray-600">Figure 1. Hierarchy of Air Force departments and where medical groups sit in the structure.</p>
+    </div>
+  
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold text-blue-800 mb-4">Organizing Tasks with Clarity</h2>
+      <p class="leading-relaxed mb-4">We used <span class="font-semibold text-blue-700">SharePoint Lists</span> to organize tasks into familiar spreadsheet-style views, breaking them down by unit or department. Then, using Power Automate, we synchronized each unit’s list into a master list for admin-level visibility only.</p>
+      <p class="leading-relaxed">This ensured that leadership could track progress, while keeping sensitive departmental tasks private.</p>
+    </div>
+  
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold text-blue-800 mb-4">Automating Privacy with Power Automate</h2>
+      <p class="leading-relaxed mb-4">We built secure workflows that automatically routed sensitive documents to specific recipients and restricted access based on department affiliation.</p>
+      <ul class="list-disc list-inside pl-4 mb-4">
+        <li>When someone adds a document, the “Unit” field is auto-filled</li>
+        <li>Access is granted only to that unit’s members</li>
+        <li>Others are restricted from viewing it</li>
+      </ul>
+      <img src="/Media/Photos/CaseStudyTwo/PowerAutomationExample.png" alt="Power Automate flow logic" class="rounded-xl shadow-md mx-auto mb-4 w-1/2 h-1/2">
+      <p class="text-center text-sm text-gray-600">Figure 2. Automated flow logic for department-specific access control.</p>
+    </div>
+  
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold text-blue-800 mb-4">Challenges with Microsoft Teams Integration</h2>
+      <p class="leading-relaxed mb-4">At first, it seemed ideal to use Microsoft Teams channels because each one creates its own SharePoint site. But this quickly became fragmented. These SharePoint “islands” didn’t talk to each other well, and trying to connect them slowed down collaboration.</p>
+      <blockquote class="border-l-4 border-blue-500 pl-4 italic text-blue-900 mb-4">"What we pictured as a city with locked buildings turned into a set of isolated islands."</blockquote>
+      <p class="leading-relaxed">This led us to redesign the structure so teams could stay private while still being able to communicate and share data when needed like separate houses in the same neighborhood.</p>
+      <img src="/Media/Photos/CaseStudyTwo/MicrosoftTeamsExample.png" alt="Microsoft Teams integrated with SharePoint" class="rounded-xl shadow-md mx-auto mb-4 w-1/2 h-1/2">
+      <p class="text-center text-sm text-gray-600">Figure 3. Teams application interface where a SharePoint is embedded for internal collaboration.</p>
+    </div>
+  
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold text-blue-800 mb-4">Testing and Real-World Constraints</h2>
+      <p class="leading-relaxed mb-4">Since we only had student-level Microsoft 365 accounts, we couldn’t use premium features like Azure Active Directory. So we recreated the access logic manually through Power Automate flows.</p>
+      <p class="leading-relaxed">It was slow and often required troubleshooting, but it worked—and it helped us learn just how much you can accomplish with determination and resourcefulness.</p>
+    </div>
+  
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold text-blue-800 mb-4">Reflection</h2>
+      <p class="leading-relaxed mb-4">I’ll revisit this part when we complete the project.</p>
+    </div>
+  </section>
+  
+  </body>

@@ -6,53 +6,61 @@
   <title>Alondra's Portfolio</title>
   <link href="dist/output.css" rel="stylesheet">
 </head>
-<body class="min-h-screen bg-white font-sans text-black">
-  <!-- Full-screen container -->
-  <div class="flex items-center min-h-screen">
-    
-    <!-- Left: CD stack -->
-    <div class="w-20 relative flex flex-col items-center space-y-6">
-      <div class="w-40 h-40 -ml-20 rounded-full bg-blue-500 shadow-md border-4 border-white relative overflow-hidden">
-        
-      </div>
-      <div class="w-40 h-40 -ml-20 rounded-full bg-green-500 shadow-md border-4 border-white relative overflow-hidden">
-        
-      </div>
-      <div class="w-40 h-40 -ml-20 rounded-full bg-red-500 shadow-md border-4 border-white relative overflow-hidden">
-      
-      </div>
-    </div>
-
-    <!-- Right: Centered text block -->
-    <div class="flex-1 flex flex-col items-end justify-center pl-40 pr-20 space-y-10">
-      <div>
-        <h1 class="text-6xl font-bold leading-tight">
-          Alondra<br />Ramirez<br />Perez
-        </h1>
-        <ul class="space-y-1 text-lg mt-2">
-          <li>developer</li>
-          <li>designer</li>
-          <li>digitally-involved</li>
-        </ul>
-      </div>
-
-      <!-- Buttons at bottom of text block -->
-      <div class="flex space-x-4">
-        <div class="w-20 h-20 border-2 rounded-md flex items-center justify-center">
-          Mii
-        </div>
-        <div class="w-20 h-20 border-2 rounded-md flex items-center justify-center">
-          Photos
-        </div>
-      </div>
-    </div><!--end of the first section-->
+<body class=" font-sans text-black justify-center items-center min-h-screen relative mx-auto"style="background-image: url('./Media/SiteAssets/Background.png'); background-size: cover; background-attachment: fixed;">
+  <div class="sticky h-16 z-50">
+  <nav class="bg-[#bdd3e4] lg:text-2xl fixed pt-0 pb-4 w-full z-50 h-16">
+    <ul class="flex justify-between max-w-6xl mx-auto p-3 w-screen" style="background-color: #bdd3e4;">
+      <li><a href="#Home" class="text-blue-600 font-semibold scroll-mt-20">Home</a></li>
+      <li><a href="#CaseStudies" class="text-blue-600 font-semibold scroll-mt-20">Case Studies</a></li>
+      <li><a href="#About" class="text-blue-600 font-semibold scroll-mt-20">About</a></li>
+      <li><a href="#Contact" class="text-blue-600 font-semibold scroll-mt-20">Contact</a></li>
+    </ul>
+  </nav>  
   </div>
+
+
+
+ <!-- === LANDING PAGE SECTION === --><!--leave this alone so that the white background shows up-->
+ <section id="Home"
+  class="scroll-mt-12 pt-16 relative mx-auto min-h-[98vh] bg-cover bg-center bg-no-repeat flex items-center justify-center"
+  style="background-image: url('./Media/SiteAssets/HomePage/LandingPage2.svg'); background-size: cover; max-width: 150rem;">
+ <div class="flex flex-col lg:flex-row items-center justify-between w-full max-w-screen-xl mx-auto gap-12 py-2">
+
+   <!-- Text Section -->
+   <div class="text-left lg:text-left px-4 w-1/2 pl-16 2xl:px-0 pb-[2rem] ">
+     <h2 class="text-5xl sm:text-6xl md:text-7xl font-light text-blue-800 leading-tight">
+       Alondra<br />Ramirez<br />Perez
+     </h2>
+     <p class="text-base sm:text-lg md:text-xl mt-8 max-w-xl">
+       I'm an Information Technology student who enjoys figuring out how to make systems work better for real people.
+       I like to focus on clarity, structure, and usability. My projects often live at the intersection of tech and
+       design, and I care just as much about the experience as I do about the logic behind it.
+     </p>
+   </div>
+
+   <!-- Image Section -->
+   <div class="w-full lg:w-[60%] flex justify-end pr-4 pb-[6rem]">
+     <img src="/Media/Photos/Personal/ProfilePic4.png" alt="profile-pic"
+       class="w-40 sm:w-52 md:w-64 lg:w-[25rem] aspect-square rounded-full object-cover object-top shadow-lg border-4 border-white mr-[-3rem]" />
+   </div>
+
+ </div>
+</section>
+<section class="relative mx-auto  w-screen min-h-[10rem] p-4" style="background-color:lightsteelblue; width: 150rem; height:9rem;">
+  
+</section>
+
+
+  
     <!-- === CASE STUDIES SECTION === -->
-    <section class="min-h-screen bg-blue-100 flex items-center justify-center">
+    <section id="CaseStudies" class="bg-slate-300 relative scroll-mt-16 mx-auto min-h-screen h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"
+    style="background-image: url('./Media/SiteAssets/CaseStudies/CaseBackground.png'); background-size: cover; max-width: 150rem; ">
+    
+
       <div class="text-center">
         <h2 class="text-4xl font-bold mb-40">Case Studies</h2>
       <div class="flex justify-center items-center gap-20 mb-40">
-        <a href="Pages/Case-Study-One.html">
+        <a href="Pages/Case-Study-OneTwo.html">
           <div class="relative group w-[450px] h-[150px] cursor-pointer hover:brightness-110 border border-red-500 rounded-md overflow-visible">
             
             <!-- Background image inside -->
@@ -89,24 +97,31 @@
         </div>
         <p class="text-lg">do my changes actually save though </p> 
       </div>
+     
     </section>
+    <section class="relative mx-auto w-screen  min-h-[10rem] p-4" style="background-color:lightsteelblue; width: 150rem; height:9rem;">
   
+    </section>
 
       <!-- === THIRD SECTION === -->
-      <section class="min-h-screen bg-gray-100 flex items-center justify-center">
+      <section id="About" class=" scroll-mt-16 relative  mx-auto min-h-screen h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"style="background-image: url('./Media/SiteAssets/AboutBackground.png'); background-size: cover; max-width: 150rem; ">
         <div class="text-center">
           <h2 class="text-4xl font-bold mb-4">About Me goes here</h2>
           <p class="text-lg">This is the start of something more 👀</p>
          
         </div>
       </section>
-
+      <section class="relative mx-auto w-screen  min-h-[10rem] p-4" style="background-color:lightsteelblue; width: 150rem; height:9rem;">
+  
+      </section>
        <!-- === Fourth Section SECTION === -->
-       <section class="min-h-screen bg-gray-100 flex items-center justify-center">
+       <section id="Contact" class=" scroll-mt-16 relative  mx-auto min-h-screen h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"style="background-image: url('./Media/SiteAssets/ContactBackground.png'); background-size: cover; max-width: 150rem; ">
         <div class="text-center">
           <h2 class="text-4xl font-bold mb-4">Contact Me Page goes Here</h2>
           <p class="text-lg">what if I had a youtube or something </p>
         </div>
       </section>
+ </div>
+  
 </body>
 </html>
