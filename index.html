@@ -5,15 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alondra's Portfolio</title>
   <link href="dist/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 </head>
 <body class=" font-sans text-black justify-center items-center min-h-screen relative mx-auto"style="background-image: url('./Media/SiteAssets/Background.png'); background-size: cover; background-attachment: fixed;">
   <div class="sticky h-16 z-50">
   <nav class="bg-[#bdd3e4] lg:text-2xl fixed pt-0 pb-4 w-full z-50 h-16">
-    <ul class="flex justify-between max-w-6xl mx-auto p-3 w-screen" style="background-color: #bdd3e4;">
-      <li><a href="#Home" class="text-blue-600 font-semibold scroll-mt-20">Home</a></li>
-      <li><a href="#CaseStudies" class="text-blue-600 font-semibold scroll-mt-20">Case Studies</a></li>
-      <li><a href="#About" class="text-blue-600 font-semibold scroll-mt-20">About</a></li>
-      <li><a href="#Contact" class="text-blue-600 font-semibold scroll-mt-20">Contact</a></li>
+    <ul class="flex justify-between max-w-6xl mx-auto p-2 w-screen" style="background-color: #bdd3e4;">
+      <li><a href="#Home" class="text-blue-800 font-semibold scroll-mt-20" style="font-family:'Poppins'; font-weight: 400; font-size: x-large">Home</a></li>
+      <li><a href="#CaseStudies" class="text-blue-800 font-semibold scroll-mt-20" style="font-family:'Poppins'; font-weight:400; font-size: x-large">Case Studies</a></li>
+      <li><a href="#About" class="text-blue-800 font-semibold scroll-mt-20" style="font-family:'Poppins'; font-weight: 400; font-size: x-large">About</a></li>
+      <li><a href="#Contact" class="text-blue-800 font-semibold scroll-mt-20" style="font-family:'Poppins'; font-weight: 400; font-size: x-large">Contact</a></li>
     </ul>
   </nav>  
   </div>
@@ -23,15 +27,17 @@
  <!-- === LANDING PAGE SECTION === --><!--leave this alone so that the white background shows up-->
  <section id="Home"
   class="scroll-mt-12 pt-16 relative mx-auto min-h-[98vh] bg-cover bg-center bg-no-repeat flex items-center justify-center"
-  style="background-image: url('./Media/SiteAssets/HomePage/LandingPage2.svg'); background-size: cover; max-width: 150rem;">
+  style="background-image: url('./Media/SiteAssets/FinalLandingPage.png'); background-size: cover; max-width: 150rem;">
  <div class="flex flex-col lg:flex-row items-center justify-between w-full max-w-screen-xl mx-auto gap-12 py-2">
 
    <!-- Text Section -->
    <div class="text-left lg:text-left px-4 w-1/2 pl-16 2xl:px-0 pb-[2rem] ">
-     <h2 class="text-5xl sm:text-6xl md:text-7xl font-light text-blue-800 leading-tight">
-       Alondra<br />Ramirez<br />Perez
+     <h2 class="font-heading text-6xl font-bold text-blue-800 leading-tight"
+        style="font-family: 'Poppins'; font-weight:500 ;letter-spacing: 0.00em;">
+       Alondra Ramirez-Perez
      </h2>
-     <p class="text-base sm:text-lg md:text-xl mt-8 max-w-xl">
+     <p class=" text-black font-body text-base sm:text-lg md:text-xl mt-8 max-w-xl bg-white/10 backdrop-blur-sm shadow-sm  rounded-xl tracking-wide"
+        style="font-family: 'DM Sans'; font-weight: 300; letter-spacing: 0.00em;">
        I'm an Information Technology student who enjoys figuring out how to make systems work better for real people.
        I like to focus on clarity, structure, and usability. My projects often live at the intersection of tech and
        design, and I care just as much about the experience as I do about the logic behind it.
@@ -40,88 +46,419 @@
 
    <!-- Image Section -->
    <div class="w-full lg:w-[60%] flex justify-end pr-4 pb-[6rem]">
-     <img src="/Media/Photos/Personal/ProfilePic4.png" alt="profile-pic"
+     <img src="Media/Photos/Personal/ProfilePic4.png" alt="profile-pic"
        class="w-40 sm:w-52 md:w-64 lg:w-[25rem] aspect-square rounded-full object-cover object-top shadow-lg border-4 border-white mr-[-3rem]" />
    </div>
 
  </div>
 </section>
-<section class="relative mx-auto  w-screen min-h-[10rem] p-4" style="background-color:lightsteelblue; width: 150rem; height:9rem;">
-  
-</section>
 
 
-  
     <!-- === CASE STUDIES SECTION === -->
-    <section id="CaseStudies" class="bg-slate-300 relative scroll-mt-16 mx-auto min-h-screen h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"
-    style="background-image: url('./Media/SiteAssets/CaseStudies/CaseBackground.png'); background-size: cover; max-width: 150rem; ">
+    <section id="CaseStudies" class="bg-slate-300 relative scroll-mt-16 mx-auto min-h-screen h-screen bg-cover bg-center bg-no-repeat flex flex-col items-center justify-start"
+    style="background-image: url('./Media/SiteAssets/FinalCaseStudyPage.jpg'); background-size: cover; max-width: 150rem; ">
     
 
-      <div class="text-center">
-        <h2 class="text-4xl font-bold mb-40">Case Studies</h2>
-      <div class="flex justify-center items-center gap-20 mb-40">
-        <a href="Pages/Case-Study-OneTwo.html">
-          <div class="relative group w-[450px] h-[150px] cursor-pointer hover:brightness-110 border border-red-500 rounded-md overflow-visible">
-            
-            <!-- Background image inside -->
-            <img src="Media/Photos/DS DSi - Sonic Rush Adventure - Plant Kingdom.png" alt="project preview"
-              class="absolute top-1/2 left-1/2 w-[90px] h-[110px] object-cover -translate-x-1/2 -translate-y-1/2 rounded-md" />
-            
-            <!-- Foreground DSi Frame -->
-            <img src="Media/Photos/dsi frame.png" 
-              alt="DSi Frame"
-              class="absolute inset-0 w-full h-full object-contain pointer-events-none z-10" />
-            
-            <!-- Hover Bubble Image -->
-            <img src="Media/Photos/squareBubble.png" alt="message bubble2"
-              class="absolute top-[-490px] left-1/2 transform -translate-x-1/2 w-[760px] h-[750px] object-contain
-                     opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20" />
         
-            <!-- TEXT inside Bubble -->
-            <div class="absolute top-[-150px] left-1/2 transform -translate-x-1/2 w-[400px] text-center text-xl font-semibold text-black
-            opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-40 pointer-events-none">
-              <p>Nature Conservation Project</p>
+        <h2 class="text-4xl mt-12 mb-4 text-blue-800" style="font-family: 'Poppins'; font-weight: 500;">Case Studies</h2>
+        
+        <div class="mx-auto grid grid-cols-3 grid-rows-1 gap-x-10 items-start p-24">
+         
+          <!--Case Study One-->
+          <a href="./Pages/Case-Study-OneTwo.html" class="col-span-1">
+            <div class="bg-white/30 backdrop-blur-sm border border-gray-300 rounded-md p-8 flex flex-col gap-5 h-full min-h-[20rem] justify-between text-center hover:shadow-lg transition">
+              <h1 class="text-2xl text-blue-900" style="font-family:'Poppins'; font-weight: 500;">Conservation Web Journal Capstone</h1>
+              <img src="Media/Photos/CaseStudySection/NetApp.png" class="w-32 h-32 rounded-lg mx-auto block" >
+              <p style="font-family:'DM Sans';">Developed a .NET site for conservation teams to log visits and generate summaries.</p>
+            </div>
+          </a>
+           <!--Case Study Two-->
+          <a href="./Pages/Case-Study-Two.html">
+           <div class="col-span-1 bg-white/30 backdrop-blur-sm border border-gray-300 rounded-md p-8 flex flex-col gap-5 h-full min-h-[20rem] justify-between text-center">
+            <h1 class="text-2xl text-blue-900" style="font-family:'Poppins'; font-weight: 500;">Sharepoint Administration Project</h1>
+            <img src="Media/Photos/CaseStudySection/SharePointIcon.png" class="w-32 h-32 rounded-lg mx-auto block">
+            <p style="font-family:'DM Sans';">
+              Automated document and task flows using Power Automate and SharePoint permissions.
+            </p>
+           
+          </div>
+          </a>
+           <!--Case Study Three-->
+           <a href="./Pages/Case-Study-Three.html">
+           <div class="col-span-1 bg-white/30 backdrop-blur-sm border border-gray-300 rounded-md p-8 flex flex-col gap-5 h-full min-h-[20rem] justify-between text-center">
+            <h1 class="text-2xl text-blue-900" style="font-family:'Poppins'; font-weight: 500;">Data Handling Internship Project</h1>
+            <img src="Media/Photos/CaseStudySection/GoogleSheets.png" class="w-32 h-32 rounded-lg mx-auto block">
+            <p style="font-family:'DM Sans';">Used Google Sheets to sort, organize, and analyze wildlife data logs for intake efficiency.</p>
+           </div>
+           </a>
+          
+        </div>
+      
+    </section>
+  
+
+      <!-- === ABOUT SECTION === -->
+      
+  <section id="About" 
+  class="scroll-mt-16 relative flex flex-col gap-12 w-full items-center justify-center min-h-[200vh] bg-no-repeat bg-top bg-fixed bg-[length:100%_auto]"
+  style="background-color: white; background-size: cover; max-width: 150rem;">
+  <section class="w-full py-12 px-6 bg-white">
+    <div class="w-full max-w-6xl mx-auto px-6 flex flex-col md:flex-row gap-8 items-center ">
+  
+      <!-- Profile Image -->
+  <div class="flex items-center">
+    <div class="w-64 h-64 rounded-full overflow-hidden border-2 border-gray-300 shadow-md flex items-center justify-center">
+      <img src="/Media/Photos/Personal/AboutMe/snek.jpeg"
+           alt="Photo of me"
+           class="w-full h-full object-cover object-center" />
+    </div>
+    
+  </div>
+  
+      <!-- Right: Bio and Identity Grid -->
+      <div class="flex flex-col justify-center gap-6">
+  
+        <!-- Bio Block -->
+        <div class="border border-gray-300 bg-white/80 backdrop-blur-sm rounded-xl shadow p-6">
+          <h2 class="text-2xl font-bold mb-2 text-blue-800" style="font-family: 'Poppins'; font-weight: 600;">A little more about me</h2>
+          <p class="text-gray-700 leading-relaxed" style="font-family:'DM Sans'">
+            I’m someone who loves stretching what I know by taking on new tools and challenges. Whether it’s designing in Tailwind, automating workflows in Power Automate, or organizing data in C#, I try to budget my time to grow outside of what's required.  
+            Outside of work, I’m into concerts, gaming, and learning things the long way — because I always remember it better that way.
+          </p>
+        </div>
+  
+        <!-- Identity Grid -->
+        <div class="grid grid-cols-2 gap-4">
+          <div class="border border-gray-300 rounded-xl bg-white/80 p-4 shadow">
+            <h3 class="font-semibold text-lg mb-1 text-blue-800">16Personalities Result:</h3>
+            <p class="text-gray-700" style="font-family: 'DM Sans';">INFP – The Mediator</p>
+          </div>
+          <div class="border border-gray-300 rounded-xl bg-white/80 p-4 shadow">
+            <h3 class="font-semibold text-lg mb-1 text-blue-800">Enneagram</h3>
+            <p class="text-gray-700" style="font-family: 'DM Sans';">Type 5 – The Investigator</p>
+          </div>
+          <div class="border border-gray-300 rounded-xl bg-white/80 p-4 shadow">
+            <h3 class="font-semibold text-lg mb-1  text-blue-800"">Key Strengths</h3>
+            <ul class="list-disc list-inside text-gray-700 text-md space-y-1 mb-2">
+              <li style="font-family: 'DM Sans';">Creative Problem Solver</li>
+              <li style="font-family: 'DM Sans';">Comfortable Alone but Loyal in groups</li>
+              <li style="font-family: 'DM Sans';">Meaning-Seeker</li>
+            </ul>
+          </div>
+          <div class="border border-gray-300 rounded-xl bg-white/80 p-4 shadow">
+            <h3 class="font-semibold text-lg mb-1  text-blue-800"">Blindspots</h3>
+            <ul class="list-disc list-inside text-gray-700 text-md space-y-1 mb-2">
+                <li style="font-family: 'DM Sans';">Anxious Planner</li>
+                <li style="font-family: 'DM Sans';">Difficulty Recieving Help</li>
+                <li style="font-family: 'DM Sans';">Takes some time to trust others</li>
+            </ul>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  <section class="w-full py-4" style="background-image: url('./Media/SiteAssets/FinalAboutPage.png'); background-size: cover; ">
+    <div class="max-w-6xl mx-auto px-6 grid gap-6">
+  
+      <!-- Full Width Top Card -->
+      <div class="border border-gray-300 bg-white/80 backdrop-blur-sm rounded-xl shadow p-6">
+        <h2 class="text-3xl font-bold text-blue-900 mb-2" style="font-family: 'Poppins'; font-weight: 600;">Skills & Strengths</h2>
+        <p class="text-gray-700">
+          Many of the skills I’ve developed came from personal experiences like petsitting, volunteering, and collaborating in school projects. I tend to lean into challenges that stretch how I think and work with others.
+        </p>
+      </div>
+  
+      <!-- 2x2 Card Grid -->
+      <div class="grid grid-cols-2 gap-6">
+  
+        <!-- Card 1 -->
+        <div class="border border-gray-300 bg-white/80 backdrop-blur-sm rounded-xl shadow p-4">
+          <h3 class="text-xl font-semibold mb-2 w-full text-blue-800" style="font-family: 'Poppins'; font-weight: 600; font-size:larger;">Soft Skills</h3>
+          <div class="flex gap-6">
+        
+            <!-- Column 1: Individual -->
+            <div class="w-1/2">
+              <p class="italic font-semibold mb-2" style="font-family: 'Poppins'; font-weight:500; font-size:medium;">Individual</p>
+              <ul class="list-disc list-inside text-gray-700 text-sm space-y-1" style="font-family: 'DM Sans';">
+                <li>Time management</li>
+                <li>Self direction</li>
+                <li>Detail orientation</li>
+              </ul>
+            </div>
+        
+            <!-- Column 2: Collaborative -->
+            <div class="w-1/2">
+              <p class="italic font-semibold mb-2" style="font-family: 'Poppins'; font-weight:500; font-size:medium;">Collaborative</p>
+              <ul class="list-disc list-inside text-gray-700 text-sm space-y-1" style="font-family: 'DM Sans';">
+                <li>Team collaboration</li>
+                <li>Client communication</li>
+                <li>Listening with intention</li>
+              </ul>
             </div>
         
           </div>
-        </a>
-
-        <a href="/pages/Case-Study-Two.html">
-        <div class="w-[150px] h-[150px] bg-[url('/Media/Photos/dsi-sprite.png')] bg-no-repeat [background-size:1550px_1680px] [background-position:-575px_-70px] cursor-pointer hover:brightness-110 border border-red-500">
         </div>
-        </a>
-        <div class="w-[150px] h-[150px] bg-[url('/Media/Photos/dsi-sprite.png')] bg-no-repeat [background-size:1550px_1680px] [background-position:-575px_-70px] cursor-pointer hover:brightness-110 border border-red-500">
+  
+        <!-- Card 2 -->
+        <div class="border border-gray-300 bg-white/80 backdrop-blur-sm rounded-xl shadow p-4">
+          <h3 class="text-xl font-semibold mb-2 text-blue-800" style="font-family: 'Poppins'; font-weight: 600; font-size:larger;">Software and Applications</h3>
+          <div class="flex gap-6">
+          <div class="w-1/2">
+            <p class="italic font-semibold mb-2" style="font-family: 'Poppins'; font-weight:500; font-size:medium;">Development</p>
+          
+          <ul class="list-disc list-inside text-gray-700 text-sm space-y-1 mb-2" style="font-family: 'DM Sans';">
+            <li>VS Code</li>
+            <li>MySQL Server</li>
+            <li>Azure Database + Server</li>
+            
+          </ul>
+          </div>
+          <div class="w-1/2">
+            <p class="italic font-semibold mb-2" style="font-family: 'Poppins'; font-weight:500; font-size:medium;">Communication</p>
+          <ul class="list-disc list-inside text-gray-700 text-sm space-y-1" style="font-family: 'DM Sans';">
+            <li>Slack</li>
+            <li>Discord</li>
+            <li>Microsoft Teams</li>
+          </ul>
         </div>
-        <div class="w-[150px] h-[150px] bg-[url('/Media/Photos/dsi-sprite.png')] bg-no-repeat [background-size:1550px_1680px] [background-position:-575px_-70px] cursor-pointer hover:brightness-110 border border-red-500">
         </div>
         </div>
-        <p class="text-lg">do my changes actually save though </p> 
+  
+        <!-- Card 3 -->
+        <div class="border border-gray-300 bg-white/80 backdrop-blur-sm rounded-xl shadow p-4">
+          <h3 class="text-xl font-semibold mb-2 text-blue-800" style="font-family: 'Poppins'; font-weight: 600; font-size:larger;">Technical Skills</h3>
+          <div class="flex gap-6">
+          <div class="w-1/2">
+            <p class="italic font-semibold mb-2" style="font-family: 'Poppins'; font-weight:500; font-size:medium;">Languages</p>
+          
+          <ul class="list-disc list-inside text-gray-700 text-sm space-y-1 mb-2" style="font-family: 'DM Sans';">
+            <li>HTML/CSS</li>
+            <li>C#</li>
+            <li>SQL</li>
+            
+          </ul>
+          </div>
+          <div class="w-1/2">
+            <p class="italic font-semibold mb-2" style="font-family: 'Poppins'; font-weight:500; font-size:medium;">Frameworks</p>
+          <ul class="list-disc list-inside text-gray-700 text-sm space-y-1" style="font-family: 'DM Sans';">
+            <li>Tailwind CSS</li>
+            <li>.NET</li>
+            <li>Bootstrap</li>
+          </ul>
+        </div>
+        </div>
+        </div>
+  
+        <!-- Card 4 -->
+        <div class="border border-gray-300 bg-white/80 backdrop-blur-sm rounded-xl shadow p-4">
+          <h3 class="text-xl font-semibold mb-2 text-blue-800" style="font-family: 'Poppins'; font-weight: 600; font-size:larger;">Design and Additional Tools</h3>
+          <div class="flex gap-6">
+          <div class="w-1/2">
+            <p class="italic font-semibold mb-2" style="font-family: 'Poppins'; font-weight:500; font-size:medium;">UX/UI</p>
+          
+          <ul class="list-disc list-inside text-gray-700 text-sm space-y-1 mb-2" style="font-family: 'DM Sans';">
+            <li>Canva</li>
+            <li>Figma</li>
+            <li>Goodnotes</li>
+            
+          </ul>
+          </div>
+          <div class="w-1/2">
+            <p class="italic font-semibold mb-2" style="font-family: 'Poppins'; font-weight:500; font-size:medium;">Tools</p>
+          <ul class="list-disc list-inside text-gray-700 text-sm space-y-1" style="font-family: 'DM Sans';">
+            <li>Github</li>
+            <li>Command Terminal</li>
+            <li>Asana</li>
+          </ul>
+        </div>
+        </div>
+        </div>
+  
       </div>
-     
-    </section>
-    <section class="relative mx-auto w-screen  min-h-[10rem] p-4" style="background-color:lightsteelblue; width: 150rem; height:9rem;">
-  
-    </section>
+    </div>
+  </section>
 
-      <!-- === THIRD SECTION === -->
-      <section id="About" class=" scroll-mt-16 relative  mx-auto min-h-screen h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"style="background-image: url('./Media/SiteAssets/AboutBackground.png'); background-size: cover; max-width: 150rem; ">
-        <div class="text-center">
-          <h2 class="text-4xl font-bold mb-4">About Me goes here</h2>
-          <p class="text-lg">This is the start of something more 👀</p>
-         
+        <div>
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-6 gap-x-6 items-start pt-2" style=" background-size: cover; background-color:  white;">
+          <!--start of left side-->
+          <div class="col-span-2 flex items-start h-full grid-rows-4">
+          <div class="bg-white/10 border border-gray-300 backdrop-blur-sm rounded-xl shadow-lg p-6 col-span-1 ">
+             <h1 class="text-4xl font-extrabold text-blue-900" style="font-family: 'Poppins'; font-weight: 500;">Interests and Hobbies</h1>
+             <p class="pt-4">I'm a bit of a mix of everything. I'm the type of 
+              person that is attracted to how things feel and not how they look.
+             </p>
+          
+            <div class="w-full h-px bg-gray-300 my-6"></div>
+            <div class="flex-row items-start ">
+              <div id="tileContent" class="mt-6">
+                <h3 id="tileName" class="text-lg font-semibold mb-2" style="font-family: 'Poppins'; font-weight: 500;">Click a Tile to see content here!</h3>
+                
+                <img id="tileImage" src="Media/Photos/Personal/AboutMe/ClickIcon.png" alt="" class="w-36 h-36 object-cover rounded-md mb-2" />
+             
+                <p id="tileDescription" class="text-sm text-gray-700">:)</p>
+              </div>
+          </div>
+            
+          </div><!--end of left side-->
         </div>
-      </section>
-      <section class="relative mx-auto w-screen  min-h-[10rem] p-4" style="background-color:lightsteelblue; width: 150rem; height:9rem;">
-  
-      </section>
-       <!-- === Fourth Section SECTION === -->
-       <section id="Contact" class=" scroll-mt-16 relative  mx-auto min-h-screen h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"style="background-image: url('./Media/SiteAssets/ContactBackground.png'); background-size: cover; max-width: 150rem; ">
-        <div class="text-center">
-          <h2 class="text-4xl font-bold mb-4">Contact Me Page goes Here</h2>
-          <p class="text-lg">what if I had a youtube or something </p>
+
+          <!--start-->
+          <div class=" col-span-3 grid grid-rows-4 gap-y-4 items-start px-14 ">
+            <div class="border-gray-300 border roundex-xl backdrop-blur-sm rounded-xl shadow-lg p-6 flex flex-col">
+              <h1 class="text-xl font-bold" style="font-family: 'Poppins'; font-weight: 500;">Music</h1>
+              <div class="flex items-center gap-4">
+                <div class="w-36 h-36 overflow-hidden rounded-md">
+                <img src="/Media/Photos/Personal/AboutMe/Sweet-Boy-Album.jpg" 
+                     alt="Malcolm Todd Album Cover" 
+                     class="w-36 h-36 rounded-md object-cover object-top scale-[1.00]"
+                     onclick="updateTile('Malcolm Todd')" />
+
+                     
+                </div>
+                <div class="w-36 h-36 overflow-hidden rounded-md">
+                <img src="/Media/Photos/Personal/AboutMe/t+pazolite.jpeg" 
+                     alt="T+Pazolite Artist Photo" class="w-36 h-36 rounded-md object-cover object-top scale-[1.00]" 
+                     onclick="updateTile('tpazolite', 'music')" />
+                    
+                </div>
+                <div class="w-36 h-36 overflow-hidden rounded-md">
+                <img src="/Media/Photos/Personal/AboutMe/Atarashii+Gakko.jpg"
+                     alt="Atarashii Gakko Group Photo"
+                     class="w-36 h-36 rounded-md object-cover object-center scale-[1.00]" 
+                     onclick="updateTile('Atarashii Gakko')"/>
+                </div>
+                <div class="w-36 h-36 overflow-hidden rounded-md">
+                <img src="/Media/Photos/Personal/AboutMe/geordie-greep.jpg"
+                     alt="Geordie Greep Artist Photo"
+                     class="w-36 h-36 rounded-md object-cover object-center scale-[1.00]"
+                     onclick="updateTile('Geordie Greep')" />
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="border-gray-300 border roundex-xl backdrop-blur-sm rounded-xl shadow-lg p-6 flex flex-col">
+                <h1 class="text-xl font-bold" style="font-family: 'Poppins'; font-weight: 500;">Gaming</h1>
+                <div class="flex items-center gap-4">
+                  <div class="w-36 h-36 overflow-hidden rounded-md">
+                    <img src="/Media/Photos/Personal/AboutMe/wacca.jpg"
+                         alt="Wacca Image"
+                         class="w-full h-full object-cover object-center scale-[1.25]"
+                         onclick="updateTile('Wacca')" />
+                  </div>
+                  <div class="w-36 h-36 overflow-hidden rounded-md">
+                    <img src="/Media/Photos/Personal/AboutMe/Soul-Calibur.jpg"
+                         alt="Soul Calibur Box Cover"
+                         class="w-full h-full object-cover object-center scale-[1.00]"
+                         onclick="updateTile('soulcalibur')" />
+                  </div>
+                  <div class="w-36 h-36 overflow-hidden rounded-md">
+                    <img src="/Media/Photos/Personal/AboutMe/Overwatch.jpg"
+                         alt="Soul Calibur Box Cover"
+                         class="w-full h-full object-cover object-top scale-[1.00]"
+                         onclick="updateTile('Overwatch')" />
+                  </div>
+                  <img src="/Media/Photos/Personal/AboutMe/Doom3.jpg" 
+                        alt="Doom 3 Cover" 
+                        class="w-36 h-36 rounded-md object-cover"
+                        onclick="updateTile('Doom')"
+                   />
+                </div>
+              </div>
+            </div>
+            <div><div class="border-gray-300 border roundex-xl backdrop-blur-sm rounded-xl shadow-lg p-6 flex flex-col">
+              <h1 class="text-xl font-bold" style="font-family: 'Poppins'; font-weight: 500;">Other Activities</h1>
+              <div class="flex items-center gap-4">
+              
+                <img src="/Media/Photos/Personal/AboutMe/StellaCat.jpg" 
+                     alt="Petsitting Photo" 
+                     class="w-36 h-36 rounded-md object-cover"
+                     onclick="updateTile('Petsitting')" />
+                <img src="/Media/Photos/Personal/AboutMe/HanabieConcert.jpeg" 
+                     alt="Hanabie Concert Photo" 
+                     class="w-36 h-36 rounded-md object-cover"
+                     onclick="updateTile('Concerts')" />
+                <div class="w-36 h-36 overflow-hidden rounded-md">
+                  <img src="/Media/Photos/Personal/AboutMe/GoogleSheetProject3.png"
+                     alt="Google Sheet Project Photo"
+                     class="w-full h-full object-cover object-top scale-[1.0] "
+                     onclick="updateTile('Projects')" />
+                </div>
+                <img src="/Media/Photos/Personal/AboutMe/Zenobia Camera.jpg" 
+                alt="" 
+                class="w-36 h-36 rounded-md object-cover object-top"
+                onclick="updateTile('Thrifting')"
+                 />
+              </div>
+              
+            </div></div>
+            
+            
+          </div>
+          
         </div>
+        </div>
+
       </section>
- </div>
+
+<!-- === Fourth Section SECTION === -->
+<section id="Contact" class="scroll-mt-2 relative mx-auto min-h-screen h-screen bg-cover bg-center bg-no-repeat"
+  style="background-image: url('./Media/SiteAssets/FinalContactPage.png'); background-size: cover; max-width: 150rem;">
   
+  <div class="max-w-6xl mx-auto grid grid-cols-[1fr_80px_1fr] gap-x-6 items-start px-6 pt-40">
+
+    <!-- LEFT COLUMN: Intro + Email -->
+    <div class="bg-white/10 border border-gray-300 backdrop-blur-sm rounded-xl shadow-lg p-6 flex flex-col gap-6">
+      <h1 class="text-4xl font-extrabold text-blue-900">Contact Me</h1>
+      <p class="text-lg text-gray-800 leading-relaxed">
+        Let’s connect! <br />
+        I like to find new opportunities to learn new ideas, mindsets, and tech.<br/>
+      </br>
+      I also like to talk about: 
+      <ul>
+        <li>Malcolm Todd Songs</li>
+        <li>Takedown with Chris Hansen</li>
+        <li>Jersey Shore</li>
+      </ul>
+      I'm open to anything! Hope to hear from you soon 
+      </p>
+
+      <div class="border border-gray-400 rounded-md bg-white/40 hover:bg-white/60 transition w-fit px-4 py-2 font-semibold text-gray-800">
+        alondraram26@gmail.com
+      </div>
+    </div>
+
+    <!-- CENTER COLUMN: Spacer -->
+    <div></div>
+
+    <!-- RIGHT COLUMN: Cards -->
+    <div class="flex flex-col gap-y-16">
+
+      <div class="border border-gray-300 rounded-md p-4 bg-white/30 backdrop-blur-md hover:shadow-md transition">
+        <h2 class="text-gray-800 font-bold" style="font-family: 'Poppins';">Github |
+          <a href="https://github.com/aloram12" target="_blank" class="text-blue-700  hover:text-blue-900 transition">
+          Aloram12
+        </a></h2>
+        <p class="italic">View some of my work for the nature conservation journal application, and this portfolio! More to come soon</p>
+      </div>
+
+      <div class="border border-gray-300 rounded-md p-4 bg-white/30 backdrop-blur-md hover:shadow-md transition">
+        <h2 class="text-gray-800 font-bold">LinkedIn |<a href="https://www.linkedin.com/in/alondra-ramirez-perez-1528b8220/" target="_blank" class="text-blue-700"> Alondra</a></h2>
+        <p class="italic">View and connect with me on my LinkedIn! I love seeing different perspectives and tidbits of information that people share</p>
+      </div>
+
+      <div class="border border-gray-300 rounded-md p-4 bg-white/30 backdrop-blur-md hover:shadow-md transition">
+        <h2 class="text-gray-800 font-bold italic">Website Development coming soon</h2>
+        <p class="italic">I'm looking to enhance and improve my own web development skills and combine it with my design knowledge so that I can 
+          be more suitable for UI/UX work too.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script src="/Scripts/About.js"></script>
+
 </body>
 </html>

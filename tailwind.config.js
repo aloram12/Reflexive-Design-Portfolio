@@ -13,7 +13,13 @@ module.exports = {
     },
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        heading: ['"Space Grotesk"', 'sans-serif'],
+        body: ['"IBM Plex Sans"', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 };
+
