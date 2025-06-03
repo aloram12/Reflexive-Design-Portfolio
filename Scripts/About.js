@@ -72,3 +72,5 @@
   
    
   }
+
+  window.updateTile = updateTile;
