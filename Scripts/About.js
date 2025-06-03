@@ -70,20 +70,5 @@
     document.getElementById("tileImage").alt = data.name;
     document.getElementById("tileDescription").textContent = data.description;
   
-    const playOverlay = document.getElementById("playOverlay");
-    const playButton = document.getElementById("playButton");
-  
-    if (category === "music") {
-      playOverlay.classList.remove("opacity-0");
-      playButton.onclick = () => playMusic(key);
-    } else {
-      playOverlay.classList.add("opacity-0");
-      playButton.onclick = null;
-    }
-  }
-  
-
-  function playMusic(key) {
-    console.log(`Playing music for ${key}`);
-    // Add your music player logic here later
+   
   }
