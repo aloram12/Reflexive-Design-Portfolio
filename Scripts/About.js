@@ -61,7 +61,7 @@
     }
   };
 
-  function updateTile(key, category) {
+  function updateTile(key) {
     const data = tileData[key];
     if (!data) return;
   
