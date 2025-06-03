@@ -21,7 +21,7 @@
     },
     "Wacca": {
       "name": "Wacca",
-      "img": "./Media/Photos/Personal/AboutMe/wacca.jpg",
+      "img": "./Media/Photos/Personal/AboutMe/Wacca.jpg",
       "description": "WACCA is an arcade rhythm game made in Japan but can be found at arcades like Round1 or at conventions. I love rhythm games, but it's so rare that the games song selection includes anything that I actually listen to. WACCA has anime and video game music selection but I always play from the 'Hardcore Tano-C' category (Japanese EDM!!)"
     },
     "soulcalibur": {
