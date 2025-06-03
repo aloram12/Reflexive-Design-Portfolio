@@ -7,48 +7,420 @@
   <title>Case Study One</title>
   <!-- Tailwind CSS link -->
   <link href="../dist/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&family=DM+Sans:wght@300;400;500;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
-<!--entire body-->
-<body class="w-screen bg-white font-sans text-black flex ">
-    <!--Navbar-->
-    <div class="sticky h-16 z-50">
-        <nav class="bg-[#bdd3e4] lg:text-2xl fixed pt-0 pb-4 w-full z-50 h-16">
-          <ul class="flex justify-between max-w-6xl mx-auto p-3 w-screen" style="background-color: #bdd3e4;">
-            <li><a href="../index.html#Home" class="text-blue-600 font-semibold scroll-mt-20">Home</a></li>
-            <li><a href="../index.html#CaseStudies" class="text-blue-600 font-semibold scroll-mt-20">Case Studies</a></li>
-            <li><a href="../index.html#About" class="text-blue-600 font-semibold scroll-mt-20">About</a></li>
-            <li><a href="../index.html#Contact" class="text-blue-600 font-semibold scroll-mt-20">Contact</a></li>
-          </ul>
-        </nav>  
-        </div>
-        <section
-  class="scroll-mt-12 pt-16 relative mx-auto min-h-[98vh] w-full bg-cover bg-center bg-no-repeat flex items-center justify-center"
-  style="background-image: url('../Media/SiteAssets/CaseStudies/Background2.svg'); background-size: cover; max-width: 150rem;">
-<!--Section with sub divs that house the case study content-->
+<body class="w-full bg-white font-sans text-black relative">
+  <!-- Navbar -->
+  <div class="sticky h-16 z-50">
+    <nav class="bg-[#bdd3e4] lg:text-2xl fixed pt-0 pb-4 w-full z-50 h-16">
+      <ul class="flex justify-between max-w-6xl mx-auto p-3 w-screen" style="background-color: #bdd3e4;">
+        <li><a href="../index.html#Home" class="text-blue-800 font-semibold scroll-mt-20" style="font-family:'Poppins'; font-weight: 400; font-size: x-large">Home</a></li>
+        <li><a href="../index.html#CaseStudies" class="text-blue-800 font-semibold scroll-mt-20" style="font-family:'Poppins'; font-weight: 400; font-size: x-large">Case Studies</a></li>
+        <li><a href="../index.html#About" class="text-blue-800 font-semibold scroll-mt-20" style="font-family:'Poppins'; font-weight: 400; font-size: x-large">About</a></li>
+        <li><a href="../index.html#Contact" class="text-blue-800 font-semibold scroll-mt-20" style="font-family:'Poppins'; font-weight: 400; font-size: x-large">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 
+  <!-- Hero Section -->
+  <section class="scroll-mt-12 pt-16 relative mx-auto min-h-[87vh] w-full bg-cover bg-center bg-no-repeat flex items-center justify-center" style="background-image: url('../Media/SiteAssets/CaseStudies/Background2.svg'); background-size: cover; max-width: 150rem;">
     <div class="px-6 py-16">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-      
-          <!-- Text Content -->
-          <div class=" bg-white bg-opacity-50 rounded-xl p-8 shadow-md">
-            <h1 class="text-4xl md:text-5xl font-bold text-blue-800 mb-4">Nature Conservation Journal App</h1>
-            <p class="text-lg text-gray-700 font-medium">Role: Full-Stack Developer, UX/UI Designer</p>
-            <p class="mt-6 text-base text-gray-800 leading-relaxed">
-              This case study explores how our team collaborated with the Green River Coalition to build a data-driven journal application that supports restoration tracking, volunteer reporting, and HIPAA-aligned documentation workflows using Microsoft 365 tools.
-            </p>
-          </div>
-      
-          <!-- Image Section -->
-          <div class="w-full">
-            <img src="/Media/Photos/CaseStudyOne/forest.jpg" alt="Nature Conservation App"
-                 class="w-full rounded-xl shadow-lg border border-gray-200" />
-          </div>
-      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+        <!-- Text Content -->
+        <div class="bg-white bg-opacity-50 rounded-xl p-8 shadow-md">
+          <h1 class="text-4xl md:text-4xl font-bold text-blue-800 mb-4">Nature Conservation Journal App</h1>
+          <p class="text-lg text-gray-700 font-medium">Role: Full-Stack Developer, UX/UI Designer</p>
+          <p class="text-sm text-gray-700 font-medium pt-2">Senior Capstone Project</p>
+          <p class="text-sm text-gray-700 font-medium">March 2024 - March 2025</p>
+          <p class="mt-6 text-base text-gray-800 leading-relaxed">
+          This project was built over two academic quarters with a summer break in-between. Our team wanted to develop and expand our skillset which led us to choose this kind of project where we worked with complex technologies.
+          </p>
         </div>
+        
+        <!-- Image Section -->
+<div class="flex justify-end pr-10">
+  <img 
+    src="../Media/Photos/CaseStudyOne/NetApp/DashboardPage.png" 
+    alt="Nature Conservation App" 
+    class="max-w-[500px] w-full h-auto rounded-xl shadow-lg border border-gray-200"
+  />
+</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="bg-[#bdd3e4] h-4"></div>
+
+  <!-- Technology Used Section -->
+  <section class="mx-auto w-full bg-[#bdd3e4] drop-shadow-lg">
+    <div class="grid grid-rows-[auto_auto_auto] gap-4 space-y-1 p-10 drop-shadow-md">
+      <h1 class="font-semibold text-2xl pt-4 text-blue-800" style="font-family: 'Poppins';">Technology Used</h1>
+      <div class="grid grid-cols-3 gap-4" style="font-family: 'DM Sans';">
+        <div class="p-4 text-center flex flex-col items-center">
+          <img src="../Media/Photos/CaseStudyOne/NetApp/TransparentDotNetLogo.png" alt="Microsoft .NET Logo"
+               class="max-h-24 object-contain mb-4" />
+          <p class="text-base">Microsoft .NET</p>
+        </div>
+      
+        <div class="p-4 text-center flex flex-col items-center">
+          <img src="../Media/Photos/CaseStudyOne/DatabasePhotos/AzureDatabaseLogo.png" alt="Azure Database Logo"
+               class="max-h-24 object-contain mb-4" />
+          <p class="text-base">SharePoint</p>
+        </div>
+      
+        <div class="p-4 text-center flex flex-col items-center">
+          <img src="../Media/Photos/CaseStudyOne/TechPhotos/GitHubTransparentLogo.png" alt="GitHub Logo"
+               class="max-h-24 object-contain mb-4" />
+          <p class="text-base">Microsoft Lists</p>
+        </div>
+      </div>
+  </section>
+
+<!-- New Section Template (Copy for Each Section) -->
+<section class="mx-auto w-full bg-white py-12 px-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-blue-800 mb-4" style="font-family: 'Poppins'; font-weight: 600;">Why I chose this project</h2>
+    <p class="text-base text-gray-800 leading-relaxed" style="font-family: 'DM Sans'; font-weight: 300;font-size:1.15em;">
+      In my first year of I.T., we were required to take a course named 'Managing Technical Teams' which teaches you how to navigate with 
+      the different dynamic possibilities and communication styles to get work done in an organization alongside a quarter project. This was our third 
+      big project of the year, and I had developed a certain standard for how I wanted to make my project and what kind of peers I wanted to work with. 
+      I was open to any idea as long as the project resulted in a stretch of capabilities and knowledge that we wouldn't have been given in a regular course.
+    </p>
+  </div>
+</section>
+
+<section class="mx-auto w-full bg-white py-12 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="mb-12">
+      <h2 class="text-3xl font-bold text-blue-800 mb-4" style="font-family: 'Poppins'; font-weight: 600;">
+        Choosing a client
+      </h2>
+     
+    
+      <p class="leading-relaxed mb-6" style="font-family: 'DM Sans'; font-weight: 300; font-size: 1.15em;">
+        When tasked with finding a client for this project, one of our teammates proposed working with an organization that she had volunteer experience with.
+        <br/><br/>
+        The Green River Coalition is a nature conservation initiative dedicated to protecting and restoring riparian habitats in the Green River watershed. Our team reached out, and after a few email exchanges and a live Zoom call, we confirmed their interest. The organization was seeking a better way to manage restoration site data, volunteer participation, and resource use, which gave us a clear direction and scope for our project.
+      </p>
+
+      <!-- Green River Coalition Logo -->
+      <div class="flex justify-center">
+        <img src="../Media/Photos/CaseStudyOne/BoardMembers.png" alt="Green River Coalition Logo"
+             class="w-[400px] h-[400px] rounded-xl shadow-md" />
+      </div>
     </div>
     
-   
+</section>
 
-  </section>
-  </body>
+
+<section class="mx-auto w-full bg-white py-12 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="mb-12">
+      <h2 class="text-3xl font-bold text-blue-800 mb-4" style="font-family: 'Poppins'; font-weight: 600;">
+        Problem Statement
+      </h2>
+      <p class="font-semibold text-black text-lg mb-4" style="font-family: 'Poppins';">
+        How can a regional nonprofit better track and communicate environmental restoration progress across multiple sites while ensuring volunteer efforts are properly documented?
+      </p>
+    
+      <p class="leading-relaxed mb-4" style="font-family: 'DM Sans'; font-weight: 300; font-size: 1.15em;">
+        The Green River Coalition faced ongoing difficulties in managing site restoration data. Field staff often used notebooks, disconnected photo logs, or individual spreadsheets to document progress—making it difficult to analyze trends or report to stakeholders. Additionally, data about volunteer contributions and site-specific updates were being lost or buried in inconsistent documentation.
+      </p>
+    
+      <p class="leading-relaxed" style="font-family: 'DM Sans'; font-weight: 300; font-size: 1.15em;">
+        Our team set out to build a centralized, digital journal platform that could streamline this process. We needed to understand not only what kinds of information were being gathered in the field, but how it was being shared and used downstream by different organizational roles. <br><br>
+        My focus involved translating real-world workflows—like documenting site activities, tracking volunteer hours, and entering plant data—into user-friendly digital forms while ensuring data could be securely stored, searched, and used in end-of-quarter reporting.
+      </p>
+    </div>
+    
+</section>
+
+<section class="mx-auto w-full bg-white py-12 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="mb-12">
+      <h2 class="text-3xl font-bold text-blue-800 mb-4" style="font-family: 'Poppins'; font-weight: 600;">
+        User Research
+      </h2>
+      <p class="leading-relaxed mb-4" style="font-family: 'DM Sans'; font-weight: 300; font-size:1.15em;">
+        Our team conducted two stakeholder interviews with Greg and Mike from the Green River Coalition to understand the day-to-day challenges of restoration site management and documentation. Both individuals were heavily involved in coordinating volunteers, organizing field notes, and reporting site activity to funders.
+      </p>
+      <p class="leading-relaxed mb-4" style="font-family: 'DM Sans'; font-weight: 300; font-size:1.15em;">
+        We discovered that much of their data was scattered across handwritten notes, folders, and personal drives. It was difficult to track progress across different sites, compile volunteer hours, or generate reports that demonstrated impact over time. Additionally, some volunteers weren’t logging their work consistently because there was no centralized, easy-to-use system to do so.
+      </p>
+      <p class="leading-relaxed" style="font-family: 'DM Sans'; font-weight: 300; font-size:1.15em;">
+        These insights shaped our core design decisions. We prioritized a dashboard for quick site summaries, a form system for volunteers to log hours and notes, and the ability to upload images tied to specific site visits. While our research was limited to two interviews, it laid the foundation for a tool that directly addressed the Coalition’s real operational pain points.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="mx-auto w-full bg-white py-12 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="mb-12">
+      <h2 class="text-3xl font-bold text-blue-800 mb-8" style="font-family: 'Poppins'; font-weight: 600;">
+        Ideation & Design Evolution
+      </h2>
+      <p class="leading-relaxed mb-4" style="font-family: 'DM Sans'; font-weight: 300; font-size:1.15em;">
+        Throughout development, we explored both PowerApps and .NET to determine the most practical approach for building our journal application. Although the platforms were different, the planning process remained consistent: identifying required database tables, defining UI structure, mapping user roles, and discussing necessary workflows.
+      </p>
+      <p class="leading-relaxed mb-8" style="font-family: 'DM Sans'; font-weight: 300; font-size:1.15em;">
+        Each version involved the same core steps: outlining site-to-site data requirements, structuring volunteer and staff permissions, and designing a clear, intuitive interface for input and reporting. These early ideation steps helped us stay aligned with real-world needs while iterating on technical feasibility.
+      </p>
+    
+ <!-- Image Grid -->
+<div class="grid grid-cols-5 gap-4 items-start mt-2">
+
+  <!-- Top Labels (remove the empty cell, shift labels) -->
+  <div class="col-span-2 col-start-2 text-center font-semibold text-blue-800 text-2xl" style="font-family: 'Poppins';">
+    First Version
+  </div>
+  <div class="col-span-2 col-start-4 text-center font-semibold text-blue-800 text-2xl" style="font-family: 'Poppins';">
+    Second Version
+  </div>
+
+  <!-- Row 1: Database -->
+  <div class="text-2xl font-semibold text-blue-800 self-center row-span-1" style="font-family: 'Poppins';">
+    Database
+  </div>
+  <!-- Database Image 1 -->
+<div class="relative rounded-xl overflow-hidden shadow-md h-[280px] bg-white">
+  <img src="../Media/Photos/CaseStudyOne/DatabasePhotos/AlondrasVersion.jpg" alt="Database 1" class="object-contain w-full h-full" />
+  <div class="absolute bottom-0 left-0 w-full bg-black/60 text-white text-center py-1 text-sm" style="font-family: 'DM Sans';">
+    Initial database sketch
+  </div>
+</div>
+ <!-- Database Image 2 -->
+<div class="relative rounded-xl overflow-hidden shadow-md h-[280px] bg-white">
+  <img src="../Media/Photos/CaseStudyOne/DatabasePhotos/andrews DB.png" alt="Database 2" class="object-contain w-full h-full" />
+  <div class="absolute bottom-0 left-0 w-full bg-black/60 text-white text-center py-1 text-sm" style="font-family: 'DM Sans';">
+    Peer database sketch
+  </div>
+</div>
+<!-- Database Image 3 -->
+<div class="relative rounded-xl overflow-hidden shadow-md h-[280px] bg-white">
+  <img src="../Media/Photos/CaseStudyOne/DatabasePhotos/Second Version.png" alt="Database 3" class="object-contain w-full h-full" />
+  <div class="absolute bottom-0 left-0 w-full bg-black/60 text-white text-center py-1 text-sm" style="font-family: 'DM Sans';">
+    Database re-design
+  </div>
+</div>
+  <!-- Database Image 4 -->
+<div class="relative rounded-xl overflow-hidden shadow-md h-[280px] bg-white">
+  <img src="../Media/Photos/CaseStudyOne/DatabasePhotos/Celinas DB.png" alt="Database 4" class="object-contain w-full h-full" />
+  <div class="absolute bottom-0 left-0 w-full bg-black/60 text-white text-center py-1 text-sm" style="font-family: 'DM Sans';">
+    Final database design
+  </div>
+</div>
+
+  <!-- Row 2: Interface -->
+  <div class="text-2xl font-semibold text-blue-800 self-center row-span-1" style="font-family: 'Poppins';">
+    Interface
+  </div>
+  <!-- UI Image 1 -->
+<div class="relative rounded-xl overflow-hidden shadow-md h-[280px] bg-white">
+  <img src="../Media/Photos/CaseStudyOne/GRCAppUI.png" alt="UI 1" class="object-contain w-full h-full" />
+  <div class="absolute bottom-0 left-0 w-full bg-black/60 text-white text-center py-1 text-sm" style="font-family: 'DM Sans';">
+    Lucidchart ideation for work entry UI
+  </div>
+</div>
+ <!-- UI Image 2 -->
+<div class="relative rounded-xl overflow-hidden shadow-md h-[280px] bg-white">
+  <img src="../Media/Photos/CaseStudyOne/GRCLoginPageFigma.png" alt="UI 2" class="object-contain w-full h-full" />
+  <div class="absolute bottom-0 left-0 w-full bg-black/60 text-white text-center py-1 text-sm" style="font-family: 'DM Sans';">
+    Figma login prototype
+  </div>
+</div>
+  <!-- UI Image 3 -->
+<div class="relative rounded-xl overflow-hidden shadow-md h-[280px] bg-white">
+  <img src="../Media/Photos/CaseStudyOne/DevelopmentPhotos/NetWireFrame.jpg" alt="UI 3" class="object-contain w-full h-full" />
+  <div class="absolute bottom-0 left-0 w-full bg-black/60 text-white text-center py-1 text-sm" style="font-family: 'DM Sans';">
+    .Net wireframe sketch
+  </div>
+</div>
+  <!-- UI Image 4 -->
+<div class="relative rounded-xl overflow-hidden shadow-md h-[280px] bg-white">
+  <img src="../Media/Photos/CaseStudyOne/DevelopmentPhotos/NetWireFrame2.jpg" alt="UI 4" class="object-contain w-full h-full" />
+  <div class="absolute bottom-0 left-0 w-full bg-black/60 text-white text-center py-1 text-sm" style="font-family: 'DM Sans';">
+    .Net wireframe sketch
+  </div>
+</div>
+</div>
+
+  </div>
+</section>
+
+<section class="mx-auto w-full bg-white py-12 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="mb-12">
+      <h2 class="text-3xl font-bold text-blue-800 mb-4" style="font-family: 'Poppins'; font-weight: 600;">
+        Project Challenges
+      </h2>
+      <p class="leading-relaxed mb-4" style="font-family: 'DM Sans'; font-weight: 300; font-size: 1.15em;">
+        The first version of the application was built collaboratively with input from Greg and Mike at the Green River Coalition. Their feedback helped shape the design and data structure in PowerApps. However, the second version built in .NET was developed without direct client involvement due to time and availability constraints.
+      </p>
+      <p class="leading-relaxed mb-4" style="font-family: 'DM Sans'; font-weight: 300; font-size: 1.15em;">
+        This shift introduced new challenges. Without real-time feedback, we were able to guide our own priorities and navigation patterns based on our earlier notes. Additionally, translating certain PowerApps features into a .NET environment came with unexpected complexity, especially when aligning backend tables with front-end form logic.
+      </p>
+      <p class="leading-relaxed" style="font-family: 'DM Sans'; font-weight: 300; font-size: 1.15em;">
+        Despite these hurdles, we focused on building a scalable and maintainable foundation. While the final version will benefit from future user testing, we made sure it reflected the original goals discussed with the client and included extensible components for future updates.
+      </p>
+    </div>
+    
+
+
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mt-12">
+
+  <!-- Azure Database Server -->
+  <div class="border-r md:border-r border-gray-300 pr-4">
+    <h3 class="text-xl font-semibold text-blue-800 mb-2" style="font-family: 'Poppins';">Azure Database Server</h3>
+    <ul class="list-disc ml-4 text-gray-800" style="font-family: 'DM Sans'; font-size: 1.05em;">
+      <li>Connection string mismatches</li>
+      <li>Manual data formatting errors</li>
+      <li>Understanding cost and affordability</li>
+    </ul>
+  </div>
+
+  <!-- .NET Development -->
+  <div class="border-r md:border-r border-gray-300 pr-4">
+    <h3 class="text-xl font-semibold text-blue-800 mb-2" style="font-family: 'Poppins';">.NET Development</h3>
+    <ul class="list-disc ml-4 text-gray-800" style="font-family: 'DM Sans'; font-size: 1.05em;">
+      <li>Connecting application to database server</li>
+      <li>Linking back end to front end</li>
+      <li>Debugging and testing</li>
+    </ul>
+  </div>
+
+  <!-- GitHub Workflow -->
+  <div class="border-r md:border-r border-gray-300 pr-4">
+    <h3 class="text-xl font-semibold text-blue-800 mb-2" style="font-family: 'Poppins';">GitHub Workflow</h3>
+    <ul class="list-disc ml-4 text-gray-800" style="font-family: 'DM Sans'; font-size: 1.05em;">
+      <li>Sync issues across machines</li>
+      <li>Merge conflicts between versions</li>
+      <li>Not having enough knowledge about Github in general</li>
+    </ul>
+  </div>
+
+  <!-- Troubleshooting -->
+  <div>
+    <h3 class="text-xl font-semibold text-blue-800 mb-2" style="font-family: 'Poppins';">Troubleshooting</h3>
+    <ul class="list-disc ml-4 text-gray-800" style="font-family: 'DM Sans'; font-size: 1.05em;">
+      <li>UI issues from backend errors</li>
+      <li>Cross-browser bugs</li>
+      <li>Multi-user testing limitations</li>
+    </ul>
+  </div>
+
+</div>
+
+  </div>
+</section>
+
+<section class="mx-auto w-full bg-white py-12 px-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-blue-800 mb-4" style="font-family: 'Poppins'; font-weight: 600;">Project Completion</h2>
+    <p class="text-base text-gray-800 leading-relaxed mb-4" style="font-family: 'DM Sans'; font-weight: 300;font-size:1.15em;">
+      The second version of the application, built in .NET, provides Green River Coalition with a flexible and maintainable site documentation tool. The dashboard allows staff to easily track restoration efforts, volunteer activity, and entry status across multiple sites.
+    </p>
+    <ul class="list-disc ml-6 text-gray-800 mb-4" style="font-family: 'DM Sans'; font-weight: 300;font-size:1.15em;">
+      <li>Dashboard with site cards, latest updates, and entry summaries</li>
+      <li>Role-based access and secure login</li>
+      <li>Volunteer entry tracking and task logging</li>
+      <li>CSV export-ready for future automation features</li>
+    </ul>
+    <p class="text-gray-800" style="font-family: 'DM Sans'; font-weight: 300;font-size:1.15em;">
+      Below are selected screenshots of the completed application, highlighting key functionality and the final visual structure.
+    </p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 py-10">
+      <!-- Screenshot 1 -->
+      <div class="relative rounded-xl overflow-hidden shadow-md h-[280px]">
+        <img src="../Media/Photos/CaseStudyOne/NetApp/LandingPage.png" alt="Dashboard Screenshot" class="object-contain w-full h-full" />
+        <div class="absolute bottom-0 left-0 w-full bg-black/60 text-white text-center py-2 text-sm" style="font-family: 'DM Sans';">
+          <p>Landing Page</p>
+        </div>
+      </div>
+    
+      <!-- Screenshot 2 -->
+      <div class="relative rounded-xl overflow-hidden shadow-md h-[280px]">
+        <img src="../Media/Photos/CaseStudyOne/NetApp/DashboardPage.png" alt="Entry Form Screenshot" class="object-contain w-full h-full" />
+        <div class="absolute bottom-0 left-0 w-full bg-black/60 text-white text-center py-2 text-sm" style="font-family: 'DM Sans';">
+          <p>Dashboard</p>
+        </div>
+      </div>
+    
+      <!-- Screenshot 3 -->
+      <div class="relative rounded-xl overflow-hidden shadow-md h-[280px]">
+        <img src="../Media/Photos/CaseStudyOne/NetApp/NewLogEntryCreation.png" alt="Volunteer Report Screenshot" class="object-contain w-full h-full" />
+        <div class="absolute bottom-0 left-0 w-full bg-black/60 text-white text-center py-2 text-sm" style="font-family: 'DM Sans';">
+          <p>Work log creation UI</p>
+        </div>
+      </div>
+    
+      <!-- Screenshot 4 -->
+      <div class="relative rounded-xl overflow-hidden shadow-md h-[280px]">
+        <img src="../Media/Photos/CaseStudyOne/NetApp/ResourceSelectionScreen.png" alt="Site Detail Screenshot" class="object-contain w-full h-full" />
+        <div class="absolute bottom-0 left-0 w-full bg-black/60 text-white text-center py-2 text-sm" style="font-family: 'DM Sans';">
+          <p>Resource selection screen</p>
+        </div>
+      </div>
+    
+      <!-- Screenshot 5 -->
+      <div class="relative rounded-xl overflow-hidden shadow-md h-[280px]">
+        <img src="../Media/Photos/CaseStudyOne/NetApp/SiteOverviewPage.png" alt="Admin Tools Screenshot" class="object-contain w-full h-full" />
+        <div class="absolute bottom-0 left-0 w-full bg-black/60 text-white text-center py-2 text-sm" style="font-family: 'DM Sans';">
+          <p>Site overview page</p>
+        </div>
+      </div>
+    
+      <!-- Screenshot 6 -->
+      <div class="relative rounded-xl overflow-hidden shadow-md h-[280px]">
+        <img src="../Media/Photos/CaseStudyOne/NetApp/IndividualLogEntryPage.png" alt="CSV Export Screenshot" class="object-contain w-full h-full" />
+        <div class="absolute bottom-0 left-0 w-full bg-black/60 text-white text-center py-2 text-sm" style="font-family: 'DM Sans';">
+          <p>Log entry view after submission</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+</section>
+
+
+<section class="mx-auto w-full bg-white py-4 px-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-2xl font-semibold text-blue-800 mb-4" style="font-family: 'Poppins';">Reflection</h2>
+    <p class="text-base text-gray-800 leading-relaxed" style="font-family: 'DM Sans'; font-weight: 300;font-size:1.15em;">
+      One of the most rewarding parts of this project was the team I got to work with. We all brought strong work ethics and a genuine interest in the problem we were solving, which made the collaboration feel natural and motivating. I built meaningful connections with each teammate both inside and outside the classroom, and that bond made it easier to trust the feedback I received. It also gave me the space to reflect on my own communication style and how I thrive in a team setting where mutual respect and accountability are shared. I came away from this project not only with technical and design skills, but also with a clearer sense of how I contribute to and grow from supportive, well-aligned teams.
+    </p>
+    <p class="text-base text-gray-800 leading-relaxed" style="font-family: 'DM Sans'; font-weight: 300;font-size:1.15em;">
+      <br/><br/>
+      In a more technical sense, I stumbled alot with github and coding a project that used multiple languages and connections. Even though we learned about these topics in classes
+      the hands on learning portion of this project really gave way more insight that will be valuable for future career prospects. Due to the 
+      freedom we had in our second iteration of the project, we were able to make our own path with our imaginative and innovative ideas. I genuinely could not have asked for a better team to make this project with!
+
+    </p>
+  </div>
+</section>
+<section class="mx-auto w-full bg-white py-12 px-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-2xl font-semibold text-blue-800 mb-4" style="font-family: 'Poppins';">What I Learned</h2>
+
+    <p class="text-base text-gray-800 mb-6 leading-relaxed" style="font-family: 'DM Sans'; font-weight: 300;font-size:1.15em;">
+      This project was a turning point for me in terms of both confidence and collaboration. It challenged me to grow technically and personally, and helped me better understand what makes a team environment supportive and effective. Here are a few things I took away from the experience:
+    </p>
+
+    <ul class="list-disc list-inside pl-4 leading-relaxed" style="font-family: 'DM Sans'; font-weight: 300; font-size:1.15em;">
+      <li>Don’t be afraid to work with tools you haven’t mastered yet because learning on the fly is part of the process.</li>
+      <li>Only bite off what you can realistically chew within the project timeline.</li>
+      <li>GitHub is powerful, but collaboration requires patience, version control awareness, and good habits.</li>
+      <li>Make intentional space for troubleshooting. Fixes take time, and rushing only makes things messier.</li>
+      <li>Good team chemistry makes all the difference. Trust makes feedback easier to receive and apply.</li>
+    </ul>
+  </div>
+</section>
+
+</body>
+
+</html>
