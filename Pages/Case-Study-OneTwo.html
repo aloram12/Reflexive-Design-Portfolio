@@ -7,8 +7,7 @@
   <title>Case Study One</title>
   <!-- Tailwind CSS link -->
   <link href="../dist/output.css" rel="stylesheet">
-  <link href="/Scripts/CaseStudyOne.js" rel="thing">
-  <script src="/Scripts/CaseStudyOne.js" defer></script>
+ 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&family=DM+Sans:wght@300;400;500;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -201,28 +200,7 @@
     </div>
   </div>
   
-  <!-- Fullscreen Overlay -->
-  <div
-    id="overlay"
-    class="fixed inset-0 bg-gray-800 bg-opacity-80 flex items-center justify-center z-50 h-full w-full "
-    onclick="closeImage()"
-  >
-    <!-- Close Button -->
-    <button
-      onclick="closeImage()"
-      class="absolute top-4 right-4 text-white text-3xl font-bold z-50"
-    >
-      &times;
-    </button>
   
-    <!-- Fullscreen Image -->
-    <img
-      id="fullscreen-img"
-      src=""
-      class="max-w-full max-h-full rounded shadow-lg"
-      onclick="event.stopPropagation()" <!-- Prevents closing when clicking the image -->
-    />
-  </div>
 
  <!-- Database Image 2 -->
 <div class="relative rounded-xl overflow-hidden shadow-md h-[280px] bg-white">
@@ -452,20 +430,10 @@
     </ul>
   </div>
 </section>
-<script src="/Scripts/CaseStudyOne.js" defer></script>
 
 
-<script>
-  function openImage(src) {
-    document.getElementById("fullscreen-img").src = src;
-    document.getElementById("overlay").classList.remove("hidden");
-  }
 
-  function closeImage() {
-    document.getElementById("overlay").classList.add("hidden");
-    document.getElementById("fullscreen-img").src = "";
-  }
-</script>
+
 </body>
 
 </html>
