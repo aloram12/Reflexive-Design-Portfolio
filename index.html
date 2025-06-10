@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 </head>
-<body class=" font-sans text-black justify-center items-center min-h-screen relative mx-auto"style="background-image: url('./Media/SiteAssets/Background.png'); background-size: cover; background-attachment: fixed;">
+<body class=" font-sans text-black justify-center items-center min-h-screen relative mx-auto"style="background-color: white">
   <div class="sticky h-16 z-50">
   <nav class="bg-[#bdd3e4] lg:text-2xl fixed pt-0 pb-4 w-full z-50 h-16">
     <ul class="flex justify-between max-w-6xl mx-auto p-2 w-screen" style="background-color: #bdd3e4;">
@@ -25,33 +25,38 @@
 
 
 
- <!-- === LANDING PAGE SECTION === --><!--leave this alone so that the white background shows up-->
- <section id="Home"
-  class="scroll-mt-12 pt-16 relative mx-auto min-h-[98vh] bg-cover bg-center bg-no-repeat flex items-center justify-center"
-  style="background-image: url('./Media/SiteAssets/FinalLandingPage.png'); background-size: cover; max-width: 150rem;">
- <div class="flex flex-col lg:flex-row items-center justify-between w-full max-w-screen-xl mx-auto gap-12 py-2">
+<!-- === LANDING PAGE SECTION === -->
+<section id="Home"
+  class="scroll-mt-12 pt-16 relative overflow-visible mx-auto min-h-[98vh] lg:min-h-[110vh] bg-cover bg-center bg-no-repeat flex items-center justify-center"
+  style="background-image: url('./Media/SiteAssets/FinalLandingPage.png'); background-size: cover;">
+  
+  <div class="flex flex-col lg:flex-row items-center justify-between w-full max-w-screen-2xl px-6 lg:px-2 gap-12 py-2">
 
-   <!-- Text Section -->
-   <div class="text-left lg:text-left px-4 w-1/2 pl-16 2xl:px-0 pb-[2rem] ">
-     <h2 class="font-heading text-6xl font-bold text-blue-800 leading-tight"
-        style="font-family: 'Poppins'; font-weight:500 ;letter-spacing: 0.00em;">
-       Alondra Ramirez-Perez
-     </h2>
-     <p class=" text-black font-body text-base sm:text-lg md:text-xl mt-8 max-w-xl bg-white/10 backdrop-blur-sm shadow-sm  rounded-xl tracking-wide"
-        style="font-family: 'DM Sans'; font-weight: 300; letter-spacing: 0.00em;">
-       I'm an Information Technology student who enjoys figuring out how to make systems work better for real people.
-       I like to focus on clarity, structure, and usability. My projects often live at the intersection of tech and
-       design, and I care just as much about the experience as I do about the logic behind it.
-     </p>
-   </div>
+    <!-- Text Section -->
+    <div class="text-left w-full lg:w-1/2 pl-0 lg:pl-16 pb-10">
+      <h2 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-blue-800 leading-tight"
+          style="font-family: 'Poppins'; font-weight: 500;">
+        Alondra Ramirez-Perez
+      </h2>
+      <p class="mt-8 max-w-2xl text-black text-base sm:text-lg md:text-xl font-body tracking-wide bg-white/10 backdrop-blur-sm shadow-sm rounded-xl p-4"
+         style="font-family: 'DM Sans'; font-weight: 300;">
+        I'm an Information Technology student who enjoys figuring out how to make systems work better for real people.
+        I like to focus on clarity, structure, and usability. My projects often live at the intersection of tech and
+        design, and I care just as much about the experience as I do about the logic behind it.
+      </p>
+    </div>
 
-   <!-- Image Section -->
-   <div class="w-full lg:w-[60%] flex justify-end pr-4 pb-[6rem]">
-     <img src="Media/Photos/Personal/ProfilePic4.png" alt="profile-pic"
-       class="w-40 sm:w-52 md:w-64 lg:w-[25rem] aspect-square rounded-full object-cover object-top shadow-lg border-4 border-white mr-[-3rem]" />
-   </div>
+    <!-- Image Section -->
+    <div class="w-full lg:w-1/2 flex justify-center lg:justify-end pb-10 pr-0 lg:pr-4">
+      <img src="Media/Photos/Personal/ProfilePic4.png" alt="profile-pic"
+           class="w-40 sm:w-52 md:w-64 lg:w-[26rem] aspect-square rounded-full object-cover object-top shadow-lg border-4 border-white lg:mr-[-3rem]" />
+    </div>
 
- </div>
+  </div>
+</section>
+
+<section class="pt-6 h-10">
+
 </section>
 
 
@@ -63,7 +68,7 @@
         
         <h2 class="text-4xl mt-12 mb-4 text-blue-800" style="font-family: 'Poppins'; font-weight: 500;">Case Studies</h2>
         
-        <div class="mx-auto grid grid-cols-3 grid-rows-1 gap-x-10 items-start p-24">
+        <div class="mx-auto grid grid-cols-3 grid-rows-1 gap-x-10 items-start p-24 lg:pt-56">
          
           <!--Case Study One-->
           <a href="./Pages/Case-Study-OneTwo.html" class="col-span-1">
@@ -102,7 +107,7 @@
       
   <section id="About" 
   class="scroll-mt-16 relative flex flex-col gap-12 w-full items-center justify-center min-h-[200vh] bg-no-repeat bg-top bg-fixed bg-[length:100%_auto]"
-  style="background-color: white; background-size: cover; max-width: 150rem;">
+  style=" background-size: cover; max-width: 150rem;">
   <section class="w-full py-12 px-6 bg-white">
     <div class="w-full max-w-6xl mx-auto px-6 flex flex-col md:flex-row gap-8 items-center ">
   
@@ -159,7 +164,7 @@
       </div>
     </div>
   </section>
-  <section class="w-full py-4" style="background-image: url('../Media/SiteAssets/FinalAboutPage.png'); background-size: cover; ">
+  <section class="w-full h-full py-16 lg:max-w-full lg:py-24" style="background-image: url('./Media/SiteAssets/FinalAboutPage.png');  background-size: cover; max-width: 150rem;">
     <div class="max-w-6xl mx-auto px-6 grid gap-6">
   
       <!-- Full Width Top Card -->
@@ -281,7 +286,7 @@
   </section>
 
         <div>
-        <div class="max-w-6xl mx-auto px-6 grid grid-cols-6 gap-x-6 items-start pt-2" style=" background-size: cover; background-color:  white;">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-6 gap-x-6 items-start pt-2" style=" background-size: cover; ">
           <!--start of left side-->
           <div class="col-span-2 flex items-start h-full grid-rows-4">
           <div class="bg-white/10 border border-gray-300 backdrop-blur-sm rounded-xl shadow-lg p-6 col-span-1 ">
@@ -404,7 +409,7 @@
 
 <!-- === Fourth Section SECTION === -->
 <section id="Contact" class="scroll-mt-2 relative mx-auto min-h-screen h-screen bg-cover bg-center bg-no-repeat"
-  style="background-image: url('../Media/SiteAssets/FinalContactPage.png'); background-size: cover; max-width: 150rem;">
+  style="background-image: url('./Media/SiteAssets/FinalContactPage.png'); background-size: cover; max-width: 150rem; ">
   
   <div class="max-w-6xl mx-auto grid grid-cols-[1fr_80px_1fr] gap-x-6 items-start px-6 pt-2">
 

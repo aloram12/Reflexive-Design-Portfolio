@@ -7,6 +7,8 @@
   <title>Case Study One</title>
   <!-- Tailwind CSS link -->
   <link href="../dist/output.css" rel="stylesheet">
+  <link href="/Scripts/CaseStudyOne.js" rel="thing">
+  <script src="/Scripts/CaseStudyOne.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&family=DM+Sans:wght@300;400;500;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -69,13 +71,13 @@
         <div class="p-4 text-center flex flex-col items-center">
           <img src="../Media/Photos/CaseStudyOne/DatabasePhotos/AzureDatabaseLogo.png" alt="Azure Database Logo"
                class="max-h-24 object-contain mb-4" />
-          <p class="text-base">SharePoint</p>
+          <p class="text-base">Microsoft Azure Database Server</p>
         </div>
       
         <div class="p-4 text-center flex flex-col items-center">
           <img src="../Media/Photos/CaseStudyOne/TechPhotos/GitHubTransparentLogo.png" alt="GitHub Logo"
                class="max-h-24 object-contain mb-4" />
-          <p class="text-base">Microsoft Lists</p>
+          <p class="text-base">Github</p>
         </div>
       </div>
   </section>
@@ -104,7 +106,7 @@
       <p class="leading-relaxed mb-6" style="font-family: 'DM Sans'; font-weight: 300; font-size: 1.15em;">
         When tasked with finding a client for this project, one of our teammates proposed working with an organization that she had volunteer experience with.
         <br/><br/>
-        The Green River Coalition is a nature conservation initiative dedicated to protecting and restoring riparian habitats in the Green River watershed. Our team reached out, and after a few email exchanges and a live Zoom call, we confirmed their interest. The organization was seeking a better way to manage restoration site data, volunteer participation, and resource use, which gave us a clear direction and scope for our project.
+        The Green River Coalition is a nature conservation initiative dedicated to protecting and restoring nature sites surrounding the Green River watershed. Our team reached out, and after a few email exchanges and a live Zoom call, we confirmed their interest. The organization was seeking a better way to manage restoration site data, volunteer participation, and resource use for basic productivity improvement and grant writing processes, which gave us a clear direction and scope for our project.
       </p>
 
       <!-- Green River Coalition Logo -->
@@ -124,16 +126,16 @@
         Problem Statement
       </h2>
       <p class="font-semibold text-black text-lg mb-4" style="font-family: 'Poppins';">
-        How can a regional nonprofit better track and communicate environmental restoration progress across multiple sites while ensuring volunteer efforts are properly documented?
+        How can a nonprofit organization better track and communicate environmental restoration progress across multiple sites while ensuring volunteer efforts are properly documented for grant writing and shareholder understanding?
       </p>
     
       <p class="leading-relaxed mb-4" style="font-family: 'DM Sans'; font-weight: 300; font-size: 1.15em;">
-        The Green River Coalition faced ongoing difficulties in managing site restoration data. Field staff often used notebooks, disconnected photo logs, or individual spreadsheets to document progress—making it difficult to analyze trends or report to stakeholders. Additionally, data about volunteer contributions and site-specific updates were being lost or buried in inconsistent documentation.
+        The Green River Coalition faced ongoing difficulties in managing site restoration data. Field staff often used excel sheets, OneDrive documents and folders or an honor system to document progress—making it difficult to analyze trends or report to stakeholders. Additionally, data about volunteer contributions and site-specific updates were being lost or buried in inconsistent documentation.
       </p>
     
       <p class="leading-relaxed" style="font-family: 'DM Sans'; font-weight: 300; font-size: 1.15em;">
-        Our team set out to build a centralized, digital journal platform that could streamline this process. We needed to understand not only what kinds of information were being gathered in the field, but how it was being shared and used downstream by different organizational roles. <br><br>
-        My focus involved translating real-world workflows—like documenting site activities, tracking volunteer hours, and entering plant data—into user-friendly digital forms while ensuring data could be securely stored, searched, and used in end-of-quarter reporting.
+        Our team set out to build a centralized, digital journal platform that could hit all the needs of the organization. We needed to understand not only what kinds of information were being gathered in the field, but how it was being shared and used downstream by different roles. <br><br>
+        My focus involved translating real-world workflows like documenting site activities, tracking volunteer hours, and entering plant data into user-friendly digital forms while ensuring data could be securely stored, searched, and used in end-of-quarter reporting.
       </p>
     </div>
     
@@ -149,7 +151,7 @@
         Our team conducted two stakeholder interviews with Greg and Mike from the Green River Coalition to understand the day-to-day challenges of restoration site management and documentation. Both individuals were heavily involved in coordinating volunteers, organizing field notes, and reporting site activity to funders.
       </p>
       <p class="leading-relaxed mb-4" style="font-family: 'DM Sans'; font-weight: 300; font-size:1.15em;">
-        We discovered that much of their data was scattered across handwritten notes, folders, and personal drives. It was difficult to track progress across different sites, compile volunteer hours, or generate reports that demonstrated impact over time. Additionally, some volunteers weren’t logging their work consistently because there was no centralized, easy-to-use system to do so.
+        We discovered that much of their data was scattered across excel sheet notes, folders, and communication channels. It was difficult to track consistent progress across different sites, compile volunteer hours, or generate reports that demonstrated impact over time. Additionally, some volunteers weren’t logging their work data in a consistent manner because there was no centralized, easy-to-use system to do so.
       </p>
       <p class="leading-relaxed" style="font-family: 'DM Sans'; font-weight: 300; font-size:1.15em;">
         These insights shaped our core design decisions. We prioritized a dashboard for quick site summaries, a form system for volunteers to log hours and notes, and the ability to upload images tied to specific site visits. While our research was limited to two interviews, it laid the foundation for a tool that directly addressed the Coalition’s real operational pain points.
@@ -187,12 +189,41 @@
     Database
   </div>
   <!-- Database Image 1 -->
-<div class="relative rounded-xl overflow-hidden shadow-md h-[280px] bg-white">
-  <img src="../Media/Photos/CaseStudyOne/DatabasePhotos/AlondrasVersion.jpg" alt="Database 1" class="object-contain w-full h-full" />
-  <div class="absolute bottom-0 left-0 w-full bg-black/60 text-white text-center py-1 text-sm" style="font-family: 'DM Sans';">
-    Initial database sketch
+  <div class="relative rounded-xl overflow-hidden shadow-md h-[280px] bg-white">
+    <img
+      src="../Media/Photos/CaseStudyOne/DatabasePhotos/AlondrasVersion.jpg"
+      alt="Database 1"
+      class="object-contain w-full h-full cursor-pointer"
+      onclick="openImage(this.src)"
+    />
+    <div class="absolute bottom-0 left-0 w-full bg-black/60 text-white text-center py-1 text-sm" style="font-family: 'DM Sans';">
+      Initial database sketch
+    </div>
   </div>
-</div>
+  
+  <!-- Fullscreen Overlay -->
+  <div
+    id="overlay"
+    class="fixed inset-0 bg-gray-800 bg-opacity-80 flex items-center justify-center z-50 h-full w-full "
+    onclick="closeImage()"
+  >
+    <!-- Close Button -->
+    <button
+      onclick="closeImage()"
+      class="absolute top-4 right-4 text-white text-3xl font-bold z-50"
+    >
+      &times;
+    </button>
+  
+    <!-- Fullscreen Image -->
+    <img
+      id="fullscreen-img"
+      src=""
+      class="max-w-full max-h-full rounded shadow-lg"
+      onclick="event.stopPropagation()" <!-- Prevents closing when clicking the image -->
+    />
+  </div>
+
  <!-- Database Image 2 -->
 <div class="relative rounded-xl overflow-hidden shadow-md h-[280px] bg-white">
   <img src="../Media/Photos/CaseStudyOne/DatabasePhotos/andrews DB.png" alt="Database 2" class="object-contain w-full h-full" />
@@ -326,9 +357,10 @@
     </p>
     <ul class="list-disc ml-6 text-gray-800 mb-4" style="font-family: 'DM Sans'; font-weight: 300;font-size:1.15em;">
       <li>Dashboard with site cards, latest updates, and entry summaries</li>
-      <li>Role-based access and secure login</li>
-      <li>Volunteer entry tracking and task logging</li>
-      <li>CSV export-ready for future automation features</li>
+      <li>Resource selection tracking</li>
+      <li>Login authentication</li>
+      <li>Database table matching to site records</li>
+      
     </ul>
     <p class="text-gray-800" style="font-family: 'DM Sans'; font-weight: 300;font-size:1.15em;">
       Below are selected screenshots of the completed application, highlighting key functionality and the final visual structure.
@@ -420,7 +452,20 @@
     </ul>
   </div>
 </section>
+<script src="/Scripts/CaseStudyOne.js" defer></script>
 
+
+<script>
+  function openImage(src) {
+    document.getElementById("fullscreen-img").src = src;
+    document.getElementById("overlay").classList.remove("hidden");
+  }
+
+  function closeImage() {
+    document.getElementById("overlay").classList.add("hidden");
+    document.getElementById("fullscreen-img").src = "";
+  }
+</script>
 </body>
 
 </html>
